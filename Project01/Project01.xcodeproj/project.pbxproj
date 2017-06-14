@@ -102,7 +102,6 @@
 				TargetAttributes = {
 					5BDE78241EE92CE8000145DF = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 5U9V2C4764;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -261,7 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5U9V2C4764;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Project01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuroky.Project01;
@@ -274,7 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5U9V2C4764;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Project01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuroky.Project01;

@@ -1,0 +1,10 @@
+project 'Project02'
+platform :ios, '9.0'
+
+target 'Project02' do
+    
+use_frameworks!
+pod 'Kingfisher', '3.10.1'
+#pod 'Alamofire', '4.4.0'
+
+end
