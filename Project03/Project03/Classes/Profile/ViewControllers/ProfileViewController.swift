@@ -8,6 +8,9 @@
 
 import UIKit
 
+let kProfileCellId = "ProfielCellId"
+
+
 class ProfileViewController: MXViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet var tableView: UITableView!
 
@@ -18,7 +21,7 @@ class ProfileViewController: MXViewController, UITableViewDataSource, UITableVie
     
     func setupUI() {
         self.navigationItem.title = "我的"
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellid")
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: kProfileCellId)
         self.tableView.rowHeight = 60
         self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0)
         
@@ -35,7 +38,7 @@ class ProfileViewController: MXViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellid", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: kProfileCellId, for: indexPath)
         return cell
     }
     

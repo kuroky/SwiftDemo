@@ -12,7 +12,12 @@ class RootViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupAppearance()
         self.setup()
+    }
+    
+    func setupAppearance() {
+        
     }
 
     func setup() {
@@ -26,17 +31,17 @@ class RootViewController: UITabBarController {
         let discoverBarItem = UITabBarItem.init(title: "发现", image: nil, selectedImage: nil)
         discoverNavi.tabBarItem = discoverBarItem
         
-        let searchVC = SearchViewController.init()
-        let searchNavi = MXNavigationController.init(rootViewController: searchVC);
-        let searchBarItem = UITabBarItem.init(title: "搜索", image: nil, selectedImage: nil)
-        searchNavi.tabBarItem = searchBarItem
+        let messageVC = MessageViewController.init()
+        let messageNavi = MXNavigationController.init(rootViewController: messageVC);
+        let messageBarItem = UITabBarItem.init(title: "消息", image: nil, selectedImage: nil)
+        messageNavi.tabBarItem = messageBarItem
         
         let profileVC = ProfileViewController.init()
         let profileNavi = MXNavigationController.init(rootViewController: profileVC);
         let profileBarItem = UITabBarItem.init(title: "我的", image: nil, selectedImage: nil)
         profileNavi.tabBarItem = profileBarItem
         
-        let viewControllers = [homeNavi, discoverNavi, searchNavi, profileNavi]
+        let viewControllers = [homeNavi, discoverNavi, messageNavi, profileNavi]
         self.viewControllers = viewControllers as [UIViewController]
     }
     
