@@ -7,15 +7,12 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 class MXAppConfig: NSObject {
-
-    static let cofigManager = MXAppConfig()
-    private override init() {
-        super.init()
-    }
     
-    func mx_setup() {
-        
+    class func mx_setup() {
+        //IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
     }
 }

@@ -12,8 +12,6 @@ class LoginViewController: MXViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func clickLoginBtn(_ sender: UIButton) {
@@ -29,6 +27,4 @@ class LoginViewController: MXViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
 }

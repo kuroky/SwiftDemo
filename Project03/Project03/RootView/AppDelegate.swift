@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var rootVC: UIViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        MXAppConfig.cofigManager.mx_setup()
+        MXAppConfig.mx_setup()
         self.window = UIWindow.init()
         self.window?.backgroundColor = UIColor.white
         if MXLoginManager.signManager.mxIsLogin! {

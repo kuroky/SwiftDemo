@@ -26,12 +26,10 @@ class MXLoginManager: NSObject {
     func mx_Login() {
         mxIsLogin = true
         kMainDelegate.window?.rootViewController = RootViewController()
-        //NotificationCenter.default.post(name: NSNotification.Name(rawValue: kLoginStateChanged), object: nil, userInfo: ["state":true])
     }
     
     func mx_Logout() {
         mxIsLogin = false
         kMainDelegate.window?.rootViewController = LoginViewController()
-        //NotificationCenter.default.post(name: NSNotification.Name(rawValue: kLoginStateChanged), object: nil, userInfo: ["state":false])
     }
 }
