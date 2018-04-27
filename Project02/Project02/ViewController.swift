@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PullToRefreshKit
 
 let kTableViewCellId:String = "kTableViewCell"
 
@@ -41,6 +42,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.view.addSubview(self.tableView)
         let nib = UINib.init(nibName: "DetailCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: kTableViewCellId)
+        
+        let header = DefaultRefreshHeader.header()
+        self.tableView.configRefreshHeader(with: header) {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(1 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {
+                self.tableView.switchRefreshHeader(to: .normal(.success, 0))
+            })
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

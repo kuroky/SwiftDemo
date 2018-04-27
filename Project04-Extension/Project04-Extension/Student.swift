@@ -13,6 +13,7 @@ class Student: NSObject {
     var age = 1
 }
 
+// 定义实例方法和类型方法
 extension Student {
     func printCurrentStudentName() {
         print(self.name)

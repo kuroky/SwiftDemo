@@ -14,7 +14,7 @@ let kTableViewCellid = "tableViewCellid"
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var tableView: UITableView!
-    var dataList: NSArray!
+    var dataList = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,8 +48,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kTableViewCellid, for: indexPath)
-        let str = self.dataList[indexPath.row]
-        cell.textLabel?.text = str as? String
+        cell.textLabel?.text = self.dataList[indexPath.row]
         return cell
     }
     
@@ -57,7 +56,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.deselectRow(at: indexPath, animated: true)
         let title = self.dataList[indexPath.row]
         let detailVC = DetailViewController.init()
-        detailVC.navigationItem.title = title as? String
+        detailVC.navigationItem.title = title
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
     

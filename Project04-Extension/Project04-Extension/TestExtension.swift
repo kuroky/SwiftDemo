@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-// 1
+// 1 添加计算型实例属性和计算型类型类型属性
 extension UIView {
     var x: CGFloat { return self.frame.origin.x }
     var y: CGFloat { return self.frame.origin.y }
@@ -17,7 +17,7 @@ extension UIView {
     var height: CGFloat { return self.frame.size.height }
 }
 
-// 3
+// 3 提供新的构造器
 struct Size {
     var width = 0.0, height = 0.0
 }
@@ -43,7 +43,7 @@ extension Rect {
     }
 }
 
-// 4
+// 4 定义下标
 extension Int {
     subscript(digitIndex: Int) -> Int {
         var decimalBase = 1
@@ -54,7 +54,7 @@ extension Int {
     }
 }
 
-// 5
+// 5 定义和使用新的嵌套类型
 extension Int {
     enum Kind {
         case negative, zero, positive
@@ -85,7 +85,7 @@ func printIntegerKinds(_ numbers: [Int]) {
     print("")
 }
 
-// 6
+// 6 使已存在类型的遵守某个协议
 protocol EmployeeProtocol {
     var address: String { get }
 }

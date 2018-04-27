@@ -108,9 +108,7 @@
 			children = (
 				5B89B8031EF1400E00A30A0E /* Classes */,
 				5B89B80E1EF140C400A30A0E /* RootView */,
-				5B89B8451EF229E600A30A0E /* Utils */,
 				5B89B8421EF14A9F00A30A0E /* Define */,
-				5B89B8461EF229E600A30A0E /* Vendor */,
 				5B89B8041EF1400E00A30A0E /* Resource */,
 			);
 			path = Project03;
@@ -219,18 +217,10 @@
 		5B89B8211EF1427700A30A0E /* Homepage */ = {
 			isa = PBXGroup;
 			children = (
-				5B89B8221EF1427700A30A0E /* Models */,
 				5B89B8231EF1427700A30A0E /* ViewControllers */,
 				5B89B8241EF1427700A30A0E /* Views */,
 			);
 			path = Homepage;
-			sourceTree = "<group>";
-		};
-		5B89B8221EF1427700A30A0E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		5B89B8231EF1427700A30A0E /* ViewControllers */ = {
@@ -301,20 +291,6 @@
 			path = Define;
 			sourceTree = "<group>";
 		};
-		5B89B8451EF229E600A30A0E /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		5B89B8461EF229E600A30A0E /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
 		5B89B84B1EF22A6000A30A0E /* homepage */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,18 +338,9 @@
 			isa = PBXGroup;
 			children = (
 				5B89B86E1EF2759E00A30A0E /* Other */,
-				5B89B85D1EF22E6400A30A0E /* Models */,
 				5B89B85E1EF22E6400A30A0E /* ViewControllers */,
-				5B89B85F1EF22E6400A30A0E /* Views */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		5B89B85D1EF22E6400A30A0E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		5B89B85E1EF22E6400A30A0E /* ViewControllers */ = {
@@ -383,13 +350,6 @@
 				5B89B8611EF22EA200A30A0E /* LoginViewController.xib */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		5B89B85F1EF22E6400A30A0E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		5B89B8641EF2559100A30A0E /* MsgSort */ = {
