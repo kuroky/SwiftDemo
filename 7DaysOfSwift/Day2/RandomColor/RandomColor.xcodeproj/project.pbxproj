@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B0C33A72096DE2600B412B3 /* Ecstasy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B0C33A62096DE2600B412B3 /* Ecstasy.mp3 */; };
 		5B9F1D0C20947EEC00335842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F1D0B20947EEC00335842 /* AppDelegate.swift */; };
 		5B9F1D0E20947EEC00335842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F1D0D20947EEC00335842 /* ViewController.swift */; };
 		5B9F1D1120947EEC00335842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F1D0F20947EEC00335842 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B0C33A62096DE2600B412B3 /* Ecstasy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ecstasy.mp3; sourceTree = "<group>"; };
 		5B9F1D0820947EEC00335842 /* RandomColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9F1D0B20947EEC00335842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B9F1D0D20947EEC00335842 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		5B9F1D0A20947EEC00335842 /* RandomColor */ = {
 			isa = PBXGroup;
 			children = (
+				5B0C33A62096DE2600B412B3 /* Ecstasy.mp3 */,
 				5B9F1D0B20947EEC00335842 /* AppDelegate.swift */,
 				5B9F1D0D20947EEC00335842 /* ViewController.swift */,
 				5B9F1D0F20947EEC00335842 /* Main.storyboard */,
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B9F1D1620947EED00335842 /* LaunchScreen.storyboard in Resources */,
+				5B0C33A72096DE2600B412B3 /* Ecstasy.mp3 in Resources */,
 				5B9F1D1320947EED00335842 /* Assets.xcassets in Resources */,
 				5B9F1D1120947EEC00335842 /* Main.storyboard in Resources */,
 			);
