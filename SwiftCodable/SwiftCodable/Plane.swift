@@ -8,6 +8,14 @@
 
 import Foundation
 
+private let json = """
+{
+    "manufacture": "Cessna",
+    "model": "172 Skyhawk",
+    "seats": 4
+}
+""".data(using: .utf8)!
+
 // 1. 遵循Decodable协议 解码
 /*
 struct Plane: Decodable {
@@ -66,59 +74,31 @@ struct Plane: Codable {
     var seats: Int
 }
 
-
-let json = """
-{
-    "manufacture": "Cessna",
-    "model": "172 Skyhawk",
-    "seats": 4,
-}
-""".data(using: .utf8)!
-
 class PlaneClass {
     class func decodeData() -> Plane {
-        print("==========  decode start  ===========")
+        LogPrint.decodeStart()
         let decoder = JSONDecoder()
         if let plane = try? decoder.decode(Plane.self, from: json) {
-            print(plane.manufacture)
-            
-            print(plane.model)
-            
-            print(plane.seats)
-            print("==========  decode end   ============")
+            LogPrint.modelDesc(model: plane)
+            LogPrint.decodeEnd()
             return plane
         }
         else {
-            return Plane(manufacture: "Cessna", model: "172 Skyhawk", seats: 4)
+            LogPrint.errorDesc(isDecode: true)
+            return Plane(manufacture: "", model: "", seats: 0)
         }
     }
     
     class func encodeData(dataModel: Plane) {
-        print("==========  encode start  ===========")
+        LogPrint.encodeStart()
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
         if let codeJson = try? encoder.encode(dataModel) {
-            print("json: \(String(data: codeJson, encoding: .utf8)!)")
+            LogPrint.modelDesc(model: String(data: codeJson, encoding: .utf8)!)
         }
         else {
-            print("error")
+            LogPrint.errorDesc(isDecode: false)
         }
-        print("=========   decode end  =============")
+        LogPrint.encodeEnd()
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

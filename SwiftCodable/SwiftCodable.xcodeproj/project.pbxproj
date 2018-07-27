@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B285DE5210AD40800610D2A /* FlightPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B285DE4210AD40800610D2A /* FlightPlan.swift */; };
+		5B285DE9210AF02400610D2A /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B285DE8210AF02400610D2A /* Print.swift */; };
+		5B285DEB210B00F600610D2A /* PlanePoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B285DEA210B00F600610D2A /* PlanePoints.swift */; };
 		5BE667E320B6A66F00720EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE667E220B6A66F00720EAA /* AppDelegate.swift */; };
 		5BE667E520B6A66F00720EAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE667E420B6A66F00720EAA /* ViewController.swift */; };
 		5BE667E820B6A66F00720EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE667E620B6A66F00720EAA /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B285DE4210AD40800610D2A /* FlightPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightPlan.swift; sourceTree = "<group>"; };
+		5B285DE8210AF02400610D2A /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
+		5B285DEA210B00F600610D2A /* PlanePoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanePoints.swift; sourceTree = "<group>"; };
 		5BE667DF20B6A66F00720EAA /* SwiftCodable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCodable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE667E220B6A66F00720EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BE667E420B6A66F00720EAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +64,10 @@
 			children = (
 				5BE667E220B6A66F00720EAA /* AppDelegate.swift */,
 				5BE667E420B6A66F00720EAA /* ViewController.swift */,
+				5B285DE8210AF02400610D2A /* Print.swift */,
 				5BE667F620B6A99F00720EAA /* Plane.swift */,
+				5B285DE4210AD40800610D2A /* FlightPlan.swift */,
+				5B285DEA210B00F600610D2A /* PlanePoints.swift */,
 				5BE667E620B6A66F00720EAA /* Main.storyboard */,
 				5BE667E920B6A67200720EAA /* Assets.xcassets */,
 				5BE667EB20B6A67200720EAA /* LaunchScreen.storyboard */,
@@ -138,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B285DE5210AD40800610D2A /* FlightPlan.swift in Sources */,
+				5B285DEB210B00F600610D2A /* PlanePoints.swift in Sources */,
 				5BE667E520B6A66F00720EAA /* ViewController.swift in Sources */,
+				5B285DE9210AF02400610D2A /* Print.swift in Sources */,
 				5BE667F720B6A99F00720EAA /* Plane.swift in Sources */,
 				5BE667E320B6A66F00720EAA /* AppDelegate.swift in Sources */,
 			);
