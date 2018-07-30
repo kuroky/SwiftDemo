@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B077251210EABE9002145CA /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B077250210EABE9002145CA /* SearchResult.swift */; };
+		5B077253210EBA2B002145CA /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B077252210EBA2B002145CA /* SearchResultViewController.swift */; };
+		5B077255210EC297002145CA /* AppleiTunesSearchURLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B077254210EC297002145CA /* AppleiTunesSearchURLComponents.swift */; };
+		5B077257210EE33E002145CA /* PlaneOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B077256210EE33E002145CA /* PlaneOrder.swift */; };
 		5B285DE5210AD40800610D2A /* FlightPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B285DE4210AD40800610D2A /* FlightPlan.swift */; };
 		5B285DE9210AF02400610D2A /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B285DE8210AF02400610D2A /* Print.swift */; };
 		5B285DEB210B00F600610D2A /* PlanePoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B285DEA210B00F600610D2A /* PlanePoints.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B077250210EABE9002145CA /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		5B077252210EBA2B002145CA /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		5B077254210EC297002145CA /* AppleiTunesSearchURLComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleiTunesSearchURLComponents.swift; sourceTree = "<group>"; };
+		5B077256210EE33E002145CA /* PlaneOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneOrder.swift; sourceTree = "<group>"; };
 		5B285DE4210AD40800610D2A /* FlightPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightPlan.swift; sourceTree = "<group>"; };
 		5B285DE8210AF02400610D2A /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
 		5B285DEA210B00F600610D2A /* PlanePoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanePoints.swift; sourceTree = "<group>"; };
@@ -68,6 +76,10 @@
 				5BE667F620B6A99F00720EAA /* Plane.swift */,
 				5B285DE4210AD40800610D2A /* FlightPlan.swift */,
 				5B285DEA210B00F600610D2A /* PlanePoints.swift */,
+				5B077252210EBA2B002145CA /* SearchResultViewController.swift */,
+				5B077254210EC297002145CA /* AppleiTunesSearchURLComponents.swift */,
+				5B077250210EABE9002145CA /* SearchResult.swift */,
+				5B077256210EE33E002145CA /* PlaneOrder.swift */,
 				5BE667E620B6A66F00720EAA /* Main.storyboard */,
 				5BE667E920B6A67200720EAA /* Assets.xcassets */,
 				5BE667EB20B6A67200720EAA /* LaunchScreen.storyboard */,
@@ -148,11 +160,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B285DE5210AD40800610D2A /* FlightPlan.swift in Sources */,
+				5B077257210EE33E002145CA /* PlaneOrder.swift in Sources */,
+				5B077251210EABE9002145CA /* SearchResult.swift in Sources */,
 				5B285DEB210B00F600610D2A /* PlanePoints.swift in Sources */,
 				5BE667E520B6A66F00720EAA /* ViewController.swift in Sources */,
 				5B285DE9210AF02400610D2A /* Print.swift in Sources */,
 				5BE667F720B6A99F00720EAA /* Plane.swift in Sources */,
+				5B077253210EBA2B002145CA /* SearchResultViewController.swift in Sources */,
 				5BE667E320B6A66F00720EAA /* AppDelegate.swift in Sources */,
+				5B077255210EC297002145CA /* AppleiTunesSearchURLComponents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

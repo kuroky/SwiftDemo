@@ -11,8 +11,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     var dataList: [Any]!
-    var tableView: UITableView!
+    //var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,20 +22,21 @@ class ViewController: UIViewController {
     }
     
     func setupData() {
-        dataList = ["第一次飞行", "等待航线", ["采取控制措施", "解析未知键", "解析未确定类型", "解析随机类型", "从多种表示法中解析数据", "继承的解析"]]
+        dataList = ["第一次飞行", "等待航线", ["采取控制措施", "解析未知键", "解析未确定类型", "解析随机类型", "从多种表示法中解析数据", "继承的解析"], "使用iTunes Search API 构建音乐商店应用"]
     }
     
     func setupUI() {
+        self.navigationItem.title = "Cadable"
         setupTableView()
     }
     
     func setupTableView() {
-        tableView = UITableView(frame: self.view.bounds, style: .plain)
-        tableView.dataSource = self
-        tableView.delegate = self
+        //tableView = UITableView(frame: self.view.bounds, style: .plain)
+        //tableView.dataSource = self
+        //tableView.delegate = self
         tableView.rowHeight = 60
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        self.view.addSubview(tableView)
+        //self.view.addSubview(tableView)
     }
     
     override func didReceiveMemoryWarning() {
@@ -109,6 +111,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         }
         else if title == "继承的解析" {
             FlightPoints.decodeData3()
+        }
+        else if title == "使用iTunes Search API 构建音乐商店应用" {
+            self.navigationController?.pushViewController(SearchResultViewController(), animated: true)
         }
     }
 }
