@@ -220,7 +220,7 @@ extension CanadaFuelPrice: FuelPrice {
     }
     
     var currency: String {
-        return "UCAD"
+        return "CAD"
     }
 }
 
@@ -291,6 +291,15 @@ class FlightPoints {
         LogPrint.decodeStart()
         let decode = JSONDecoder()
         if let object = try? decode.decode([AmericaFuelPrice].self, from: json2) {
+            LogPrint.modelDesc(model: object)
+        }
+        else {
+            LogPrint.errorDesc(isDecode: true)
+        }
+        LogPrint.decodeEnd()
+        
+        LogPrint.decodeStart()
+        if let object = try? decode.decode([String: [CanadaFuelPrice]].self, from: json3) {
             LogPrint.modelDesc(model: object)
         }
         else {
