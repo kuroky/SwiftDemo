@@ -11,7 +11,7 @@ import Moya
 
 // api
 enum TestAPI {
-    case eventList
+    case eventList(limit: Int, offset: Int)
 }
 
 extension TestAPI: TargetType {
@@ -32,8 +32,8 @@ extension TestAPI: TargetType {
     
     var task: Task {
         switch self {
-        case .eventList:
-            return .requestPlain
+        case let .eventList(limit, offset):
+            return .requestParameters(parameters: ["limit": limit, "offset": offset], encoding: URLEncoding.default)
         }
     }
     

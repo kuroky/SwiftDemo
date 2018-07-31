@@ -17,7 +17,7 @@ class HttpRequest {
             switch result {
             case let .success(response):
                 success(response.data)
-                
+                print("requestUrl: \(String(describing: response.request?.url))")
             case let .failure(error):
                 let statusCode = error.response?.statusCode ?? 0
                 let message = "请求出错, 错误码:" + String(statusCode)

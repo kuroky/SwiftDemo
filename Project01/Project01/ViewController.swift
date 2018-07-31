@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     }
     
     func setupData() {
-        dataList = ["1", "2", "3"]
+        dataList = ["Moya", "链式", "AFN式"]
     }
     
     func setupTableView() {
@@ -66,26 +66,33 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let title = dataList[indexPath.row]
-        if title == "1" {
-            HttpRequest.fetchData(Api: TestAPI.self, target: .eventList, success: { (json) in
-                
+        if title == "Moya" {
+            HttpRequest.fetchData(Api: TestAPI.self, target: .eventList(limit: 1, offset: 0), success: { (json) in
+                do {
+                    let decode = JSONDecoder()
+                    let model = try decode.decode(EventList.self, from: json)
+                        print("model: \(model)")
+                } catch let error {
+                    print("error: \(error)")
+                }
             }) { (errorCode, message) in
                 print("errprMessage:\(message)")
             }
-        }
-        else if title == "2" {
-            let json = """
-{
-    "manufacturer": "Cessna",
-    "model": "172 Skyhawk",
-    "seats": 4,
-}
-""".data(using: .utf8)!
+        } else if title == "链式" {
+            NetworkKit().url("https://houxuapp.com/api/1/events/").requestType(.Get).params(["limit": 1, "offset": 0]).success { (json) in
+                do {
+                    let decode = JSONDecoder()
+                    let model = try decode.decode(EventList.self, from: json)
+                    print("model: \(model)")
+                } catch let error {
+                    print("error: \(error)")
+                }
+                }.failure { (error) in
+                    print("errprMessage:\(error.localizedDescription)")
+            }.fetchRequest()
             
-            let decoder = JSONDecoder()
-            let plane = try! decoder.decode(TestModel.self, from: json)
-            print(plane.manufacturer + " " + plane.model + "" + String(plane.seats))
-
+        } else if title == "AFN式" {
+            
         }
     }
 }

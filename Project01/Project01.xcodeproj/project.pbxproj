@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B491F76211006D400E0E5DA /* NetworkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B491F75211006D400E0E5DA /* NetworkKit.swift */; };
 		5B73AFFE2109BA7D00B2CC80 /* TestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73AFFD2109BA7D00B2CC80 /* TestAPI.swift */; };
 		5B73B0012109BCA700B2CC80 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73B0002109BCA700B2CC80 /* HttpRequest.swift */; };
 		5B73B0032109CD1600B2CC80 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73B0022109CD1600B2CC80 /* TestModel.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		52E410C993F9A9768DD3FD4F /* Pods_Project01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B491F75211006D400E0E5DA /* NetworkKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkKit.swift; sourceTree = "<group>"; };
 		5B73AFFD2109BA7D00B2CC80 /* TestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPI.swift; sourceTree = "<group>"; };
 		5B73B0002109BCA700B2CC80 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		5B73B0022109CD1600B2CC80 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		5B73AFF82109B9DC00B2CC80 /* Chained */ = {
 			isa = PBXGroup;
 			children = (
+				5B491F75211006D400E0E5DA /* NetworkKit.swift */,
 			);
 			path = Chained;
 			sourceTree = "<group>";
@@ -171,7 +174,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = kruoky;
 				TargetAttributes = {
 					5BDE78241EE92CE8000145DF = {
@@ -267,6 +270,7 @@
 				5B73B0032109CD1600B2CC80 /* TestModel.swift in Sources */,
 				5BDE782B1EE92CE8000145DF /* ViewController.swift in Sources */,
 				5BDE78291EE92CE8000145DF /* AppDelegate.swift in Sources */,
+				5B491F76211006D400E0E5DA /* NetworkKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,15 +298,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -344,15 +356,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

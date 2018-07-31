@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
     
     func setupData() {
-        dataList = ["第一次飞行", "等待航线", ["采取控制措施", "解析未知键", "解析未确定类型", "解析随机类型", "从多种表示法中解析数据", "继承的解析"], "使用iTunes Search API 构建音乐商店应用"]
+        dataList = ["第一次飞行", "等待航线", ["采取控制措施", "解析未知键", "解析未确定类型", "解析随机类型", "从多种表示法中解析数据", "继承的解析"], "使用iTunes Search API 构建音乐商店应用", "使用 UserDefaults 构建机上服务应用"]
     }
     
     func setupUI() {
@@ -114,6 +114,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         }
         else if title == "使用iTunes Search API 构建音乐商店应用" {
             self.navigationController?.pushViewController(SearchResultViewController(), animated: true)
+        }
+        else if title == "使用 UserDefaults 构建机上服务应用" {
+            
         }
     }
 }

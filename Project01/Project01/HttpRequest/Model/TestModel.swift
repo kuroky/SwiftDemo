@@ -8,45 +8,97 @@
 
 import Foundation
 
-struct TestModel: Codable {
+struct EventList: Codable {
+    var count: Int?
+    var next: String?
+    var previous: String?
+    var results: [Item]?
+}
+
+struct Item: Codable {
+    var itemId: Int?
     
-    var manufacturer: String
-    var model: String
-    var seats: Int
+    var creator: CreatorItem?
     
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.manufacturer = try container.decode(String.self, forKey: .manufacturer)
-        self.model = try container.decode(String.self, forKey: .model)
-        self.seats = try container.decode(Int.self, forKey: .seats)
-    }
+    var title: String?
+    var description: String?
+    var overview: String?
+    
+    var tags: [String]?
+    
+    var imageSource: String?
+    var bannerURL: String?
+    var thumbURL: String?
+    
+    var persons: [PersonItem]?
+    
+    var lastThread: LastThread?
+    
+    var threadsCount: Int?
+    var updateAt: String?
+    var publishAt: String?
+    
+    var reactions: [Reaction]?
     
     private enum CodingKeys: String, CodingKey {
-        case manufacturer
-        case model
-        case seats
+        case itemId = "id"
+        case creator
+        case title
+        case description
+        case overview
+        case tags
+        case imageSource = "image_source"
+        case bannerURL = "banner_url"
+        case thumbURL = "thumb_url"
+        case persons
+        case lastThread = "last_thread"
+        case threadsCount = "threads_count"
+        case updateAt = "update_at"
+        case publishAt = "publish_at"
+        case reactions
     }
 }
 
-let json = """
-{
-    "manufacturer": "Cessna",
-    "model": "172 Skyhawk",
-    "seats": 4,
+struct CreatorItem: Codable {
+    var name: String?
 }
-""".data(using: .utf8)!
 
-let decoder = JSONDecoder()
-let plane = try! decoder.decode(TestModel.self, from: json)
+struct PersonItem: Codable {
+    var avatarUrl: String?
+    var name: String?
+    var title: String?
+    var status: String?
+    var updateAt: String?
+    
+    private enum CodingKeys: String, CodingKey {
+        case avatarUrl = "avatar_url"
+        case name
+        case title
+        case status
+        case updateAt = "update_at"
+    }
+}
 
+struct LastThread: Codable {
+    var threadId: Int
+    var title: String?
+    var linkTitle: String?
+    var eventDate: String?
+    var eventTime: String?
+    
+    private enum CodingKeys: String, CodingKey {
+        case threadId = "id"
+        case title
+        case linkTitle = "link_title"
+        case eventDate = "event_date"
+        case eventTime = "event_time"
+    }
+}
 
-
-
-
-
-
-
-
+struct Reaction: Codable {
+    var reaction: String?
+    var count: Int?
+}
 
 
 
