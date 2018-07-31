@@ -13,6 +13,6 @@ class MXAppConfig: NSObject {
     
     class func mx_setup() {
         //IQKeyboardManager.sharedManager().enable = true
-        IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
     }
 }

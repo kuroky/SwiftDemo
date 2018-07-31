@@ -6,6 +6,6 @@ target 'Project03' do
 
 pod 'Moya', '~> 11.0.2'
 pod 'Kingfisher', '~> 4.8.0'
-pod 'IQKeyboardManagerSwift', '4.0.10'
+pod 'IQKeyboardManagerSwift', '6.1.1'
 
 end
