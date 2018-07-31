@@ -8,11 +8,17 @@ DEPENDENCIES:
   - PullToRefreshKit
   - SnapKit (~> 4.0.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Kingfisher
+    - PullToRefreshKit
+    - SnapKit
+
 SPEC CHECKSUMS:
   Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
   PullToRefreshKit: 0a2a019bf094b8beba18c8a1bedfb1fb67ee70fd
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 05a0f7981b664060aa83bdbb39c9b7acd53ee3b9
+PODFILE CHECKSUM: 2e6743cc342f5e58e37f6df78c81ff0dc10002bc
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

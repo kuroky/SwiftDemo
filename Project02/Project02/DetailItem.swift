@@ -8,9 +8,13 @@
 
 import UIKit
 
-class DetailItem: NSObject {
-    
+class DetailItem {
     var title:String = ""
     var coverUrl:String = "http://bpic.588ku.com/element_origin_min_pic/16/06/09/145759061f9925d.jpg"
     var content:String = ""
+    
+    init(title: String, content: String) {
+        self.title = title
+        self.content = content
+    }
 }

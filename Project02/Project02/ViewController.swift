@@ -9,12 +9,9 @@
 import UIKit
 import PullToRefreshKit
 
-let kTableViewCellId:String = "kTableViewCell"
+private let kTableViewCellId: String = "kTableViewCell"
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    /// 数据源
-    var dataList:NSMutableArray = []
-    var tableView = UITableView.init()
+class ViewController: MXTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,25 +20,30 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func setupData() {
-        self.dataList = NSMutableArray.init()
-        for i in 0..<20 {
-            let item = DetailItem.init()
-            item.title = String(i)
-            item.content = String(i + 20)
-            self.dataList.add(item)
-        }
+        self.dataList = Array.init(repeating: DetailItem(title: "title", content: "content"), count: 20)
     }
     
     func setupUI() {
         self.navigationItem.title = "list"
+        self.setupTableView()
+//
+//
+//
+    }
+    
+    func setupTableView() {
+        self.rowHeight = 100
+        self.cellIdentifier = kTableViewCellId
         
-        self.tableView.frame = self.view.bounds
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
-        self.tableView.rowHeight = 120
-        self.view.addSubview(self.tableView)
         let nib = UINib.init(nibName: "DetailCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: kTableViewCellId)
+        
+        self.tableView.snp.makeConstraints { (make) in
+            make.leading.equalTo(self.view.snp.leading)
+            make.trailing.equalTo(self.view.snp.trailing)
+            make.top.equalTo(self.view.snp.top)
+            make.bottom.equalTo(self.view.snp.bottom)
+        }
         
         let header = DefaultRefreshHeader.header()
         self.tableView.configRefreshHeader(with: header) {
@@ -49,32 +51,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 self.tableView.switchRefreshHeader(to: .normal(.success, 0))
             })
         }
+        
+        self.mx_reloadData { (cell, item) in
+            (cell as! DetailCell).configCellItem(item as! DetailItem)
+        }
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.dataList.count
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:DetailCell = tableView.dequeueReusableCell(withIdentifier: kTableViewCellId, for: indexPath) as! DetailCell
-        let item = self.dataList[indexPath.row]
-        cell .configCellItem(item as! DetailItem)
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+}
+
+extension ViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView .deselectRow(at: indexPath, animated: true)
-        let detailVC:SubViewController = SubViewController.init(nibName: "SubViewController", bundle: nil)
+        let detailVC:SubViewController = SubViewController()
         let item = self.dataList[indexPath.row]
         detailVC.detailItem = item as! DetailItem
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-

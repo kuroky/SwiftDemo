@@ -9,23 +9,33 @@
 import UIKit
 
 class SubViewController: UIViewController {
-
-    var detailItem:DetailItem! = nil
-    @IBOutlet var detaiImageView: UIImageView!
+    var detailItem: DetailItem! = nil
+    var detailImageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupData()
         self.setupUI()
     }
     
+    func setupData() {
+        
+    }
+    
     func setupUI() {
+        self.view.backgroundColor = UIColor.white
         self.navigationItem.title = self.detailItem.title
-        self.detaiImageView.kf.setImage(with: URL.init(string: self.detailItem.coverUrl))
+        self.view.addSubview(self.detailImageView)
+        self.detailImageView.snp.makeConstraints { (make) in
+            make.center.equalTo(self.view.snp.center)
+            make.width.equalTo(120)
+            make.height.equalTo(120)
+        }
+        self.detailImageView.kf.setImage(with: URL.init(string: self.detailItem.coverUrl))
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
 }
+
