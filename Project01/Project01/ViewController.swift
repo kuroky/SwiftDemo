@@ -71,7 +71,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
                 do {
                     let decode = JSONDecoder()
                     let model = try decode.decode(EventList.self, from: json)
-                        print("model: \(model)")
+                    print("model: \(model)")
                 } catch let error {
                     print("error: \(error)")
                 }
@@ -89,10 +89,20 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
                 }
                 }.failure { (error) in
                     print("errprMessage:\(error.localizedDescription)")
-            }.fetchRequest()
+                }.fetchRequest()
             
         } else if title == "AFN式" {
-            
+            NetworkTool.fetchData(url: "https://houxuapp.com/api/1/events/", params: ["limit": 1, "offset": 0], success: { (json) in
+                do {
+                    let decode = JSONDecoder()
+                    let model = try decode.decode(EventList.self, from: json)
+                    print("model: \(model)")
+                } catch let error {
+                    print("error: \(error)")
+                }
+            }) { (error) in
+                
+            }
         }
     }
 }

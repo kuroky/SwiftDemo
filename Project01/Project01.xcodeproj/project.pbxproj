@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B491F76211006D400E0E5DA /* NetworkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B491F75211006D400E0E5DA /* NetworkKit.swift */; };
+		5B491F78211015C100E0E5DA /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B491F77211015C100E0E5DA /* NetWorkTool.swift */; };
 		5B73AFFE2109BA7D00B2CC80 /* TestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73AFFD2109BA7D00B2CC80 /* TestAPI.swift */; };
 		5B73B0012109BCA700B2CC80 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73B0002109BCA700B2CC80 /* HttpRequest.swift */; };
 		5B73B0032109CD1600B2CC80 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73B0022109CD1600B2CC80 /* TestModel.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		52E410C993F9A9768DD3FD4F /* Pods_Project01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B491F75211006D400E0E5DA /* NetworkKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkKit.swift; sourceTree = "<group>"; };
+		5B491F77211015C100E0E5DA /* NetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
 		5B73AFFD2109BA7D00B2CC80 /* TestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPI.swift; sourceTree = "<group>"; };
 		5B73B0002109BCA700B2CC80 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		5B73B0022109CD1600B2CC80 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		5B73AFF72109B9D200B2CC80 /* AFN */ = {
 			isa = PBXGroup;
 			children = (
+				5B491F77211015C100E0E5DA /* NetWorkTool.swift */,
 			);
 			path = AFN;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				5B73B0012109BCA700B2CC80 /* HttpRequest.swift in Sources */,
 				5B73B0032109CD1600B2CC80 /* TestModel.swift in Sources */,
 				5BDE782B1EE92CE8000145DF /* ViewController.swift in Sources */,
+				5B491F78211015C100E0E5DA /* NetWorkTool.swift in Sources */,
 				5BDE78291EE92CE8000145DF /* AppDelegate.swift in Sources */,
 				5B491F76211006D400E0E5DA /* NetworkKit.swift in Sources */,
 			);
