@@ -28,13 +28,10 @@
 		5B89B84F1EF22BD500A30A0E /* HomepageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B89B84D1EF22BD500A30A0E /* HomepageCell.xib */; };
 		5B89B85A1EF22DC800A30A0E /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89B8581EF22DC800A30A0E /* MessageViewController.swift */; };
 		5B89B85B1EF22DC800A30A0E /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B89B8591EF22DC800A30A0E /* MessageViewController.xib */; };
-		5B89B8621EF22EA200A30A0E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89B8601EF22EA200A30A0E /* LoginViewController.swift */; };
-		5B89B8631EF22EA200A30A0E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B89B8611EF22EA200A30A0E /* LoginViewController.xib */; };
 		5B89B8671EF255BA00A30A0E /* MsgSortListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89B8651EF255BA00A30A0E /* MsgSortListCell.swift */; };
 		5B89B8681EF255BA00A30A0E /* MsgSortListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B89B8661EF255BA00A30A0E /* MsgSortListCell.xib */; };
 		5B89B86C1EF2592D00A30A0E /* DiscoverListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89B86A1EF2592D00A30A0E /* DiscoverListCell.swift */; };
 		5B89B86D1EF2592D00A30A0E /* DiscoverListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B89B86B1EF2592D00A30A0E /* DiscoverListCell.xib */; };
-		5B89B8701EF275AE00A30A0E /* MXLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89B86F1EF275AE00A30A0E /* MXLoginManager.swift */; };
 		5B89B8721EF279C900A30A0E /* MXAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89B8711EF279C900A30A0E /* MXAppConfig.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,13 +59,10 @@
 		5B89B84D1EF22BD500A30A0E /* HomepageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomepageCell.xib; sourceTree = "<group>"; };
 		5B89B8581EF22DC800A30A0E /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		5B89B8591EF22DC800A30A0E /* MessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
-		5B89B8601EF22EA200A30A0E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		5B89B8611EF22EA200A30A0E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		5B89B8651EF255BA00A30A0E /* MsgSortListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgSortListCell.swift; sourceTree = "<group>"; };
 		5B89B8661EF255BA00A30A0E /* MsgSortListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MsgSortListCell.xib; sourceTree = "<group>"; };
 		5B89B86A1EF2592D00A30A0E /* DiscoverListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverListCell.swift; sourceTree = "<group>"; };
 		5B89B86B1EF2592D00A30A0E /* DiscoverListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverListCell.xib; sourceTree = "<group>"; };
-		5B89B86F1EF275AE00A30A0E /* MXLoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXLoginManager.swift; sourceTree = "<group>"; };
 		5B89B8711EF279C900A30A0E /* MXAppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAppConfig.swift; sourceTree = "<group>"; };
 		E1F7E9F009C4E451D85B486A /* Pods_Project03.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project03.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				5B89B8111EF1416000A30A0E /* Base */,
-				5B89B85C1EF22E6400A30A0E /* Login */,
 				5B89B8211EF1427700A30A0E /* Homepage */,
 				5B89B8191EF1427700A30A0E /* Discovery */,
 				5B89B8501EF22DB400A30A0E /* Message */,
@@ -334,24 +327,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		5B89B85C1EF22E6400A30A0E /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				5B89B86E1EF2759E00A30A0E /* Other */,
-				5B89B85E1EF22E6400A30A0E /* ViewControllers */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		5B89B85E1EF22E6400A30A0E /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				5B89B8601EF22EA200A30A0E /* LoginViewController.swift */,
-				5B89B8611EF22EA200A30A0E /* LoginViewController.xib */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
 		5B89B8641EF2559100A30A0E /* MsgSort */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,14 +343,6 @@
 				5B89B86B1EF2592D00A30A0E /* DiscoverListCell.xib */,
 			);
 			name = List;
-			sourceTree = "<group>";
-		};
-		5B89B86E1EF2759E00A30A0E /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				5B89B86F1EF275AE00A30A0E /* MXLoginManager.swift */,
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 		80F0B84DB750EADAEFB8D720 /* Pods */ = {
@@ -407,7 +374,6 @@
 				5B89B7EB1EF13F9B00A30A0E /* Frameworks */,
 				5B89B7EC1EF13F9B00A30A0E /* Resources */,
 				7529DF33BD20507F620D6680 /* [CP] Embed Pods Frameworks */,
-				F11C4B75200442087964015B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -457,7 +423,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B89B8631EF22EA200A30A0E /* LoginViewController.xib in Resources */,
 				5B89B8481EF22A0C00A30A0E /* Info.plist in Resources */,
 				5B89B82C1EF142B000A30A0E /* HomepageViewController.xib in Resources */,
 				5B89B84F1EF22BD500A30A0E /* HomepageCell.xib in Resources */,
@@ -481,13 +446,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project03-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7529DF33BD20507F620D6680 /* [CP] Embed Pods Frameworks */ = {
@@ -496,28 +464,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Project03/Pods-Project03-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project03/Pods-Project03-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F11C4B75200442087964015B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project03/Pods-Project03-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -528,7 +492,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B89B8671EF255BA00A30A0E /* MsgSortListCell.swift in Sources */,
-				5B89B8621EF22EA200A30A0E /* LoginViewController.swift in Sources */,
 				5B89B8311EF143D900A30A0E /* ProfileViewController.swift in Sources */,
 				5B89B8101EF1410900A30A0E /* RootViewController.swift in Sources */,
 				5B89B86C1EF2592D00A30A0E /* DiscoverListCell.swift in Sources */,
@@ -539,7 +502,6 @@
 				5B89B8181EF141AC00A30A0E /* MXViewController.swift in Sources */,
 				5B89B8161EF1419D00A30A0E /* MXNavigationController.swift in Sources */,
 				5B89B84A1EF22A1600A30A0E /* AppDelegate.swift in Sources */,
-				5B89B8701EF275AE00A30A0E /* MXLoginManager.swift in Sources */,
 				5B89B84E1EF22BD500A30A0E /* HomepageCell.swift in Sources */,
 				5B89B85A1EF22DC800A30A0E /* MessageViewController.swift in Sources */,
 				5B89B82B1EF142B000A30A0E /* HomepageViewController.swift in Sources */,
@@ -664,7 +626,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuroky.Project03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -679,7 +641,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuroky.Project03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

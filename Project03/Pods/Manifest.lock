@@ -1,32 +1,34 @@
 PODS:
-  - Alamofire (4.4.0)
-  - ChameleonFramework/Default (2.1.0)
-  - ChameleonFramework/Swift (2.1.0):
-    - ChameleonFramework/Default
+  - Alamofire (4.7.3)
   - IQKeyboardManagerSwift (4.0.10)
-  - Kingfisher (3.10.1)
+  - Kingfisher (4.8.0)
+  - Moya (11.0.2):
+    - Moya/Core (= 11.0.2)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Result (3.2.4)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.4.0)
-  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - IQKeyboardManagerSwift (= 4.0.10)
-  - Kingfisher (~> 3.10.1)
+  - Kingfisher (~> 4.8.0)
+  - Moya (~> 11.0.2)
 
-EXTERNAL SOURCES:
-  ChameleonFramework:
-    :git: https://github.com/ViccAlexander/Chameleon.git
-
-CHECKOUT OPTIONS:
-  ChameleonFramework:
-    :commit: acc480fbe023c6e5fe40f68593f4a70a8c4c7ad5
-    :git: https://github.com/ViccAlexander/Chameleon.git
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - Moya
+    - Result
 
 SPEC CHECKSUMS:
-  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
-  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
-  Kingfisher: 33a1b82140fcb14a9fc13f78dfde2a03ff8de8cb
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
 
-PODFILE CHECKSUM: 4a0a04a845d5ec7ff897c10957b3cad516927253
+PODFILE CHECKSUM: 65f71209b3abde7d34722aa70291c78a43419d2e
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.5.3

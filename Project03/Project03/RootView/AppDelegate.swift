@@ -12,19 +12,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var rootVC: UIViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         MXAppConfig.mx_setup()
-        self.window = UIWindow.init()
+        self.window = UIWindow()
         self.window?.backgroundColor = UIColor.white
-        if MXLoginManager.signManager.mxIsLogin! {
-            rootVC = RootViewController()
-        }
-        else {
-            rootVC = LoginViewController()
-        }
-        self.window?.rootViewController = rootVC
+        self.window?.rootViewController = RootViewController()
         self.window?.makeKeyAndVisible()
         
         return true

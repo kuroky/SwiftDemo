@@ -28,17 +28,17 @@ class RootViewController: UITabBarController {
         
         let discoverVC = DiscoverViewController.init()
         let discoverNavi = MXNavigationController.init(rootViewController: discoverVC);
-        let discoverBarItem = UITabBarItem.init(title: "发现", image: nil, selectedImage: nil)
+        let discoverBarItem = UITabBarItem.init(title: "最新", image: nil, selectedImage: nil)
         discoverNavi.tabBarItem = discoverBarItem
         
         let messageVC = MessageViewController.init()
         let messageNavi = MXNavigationController.init(rootViewController: messageVC);
-        let messageBarItem = UITabBarItem.init(title: "消息", image: nil, selectedImage: nil)
+        let messageBarItem = UITabBarItem.init(title: "关注", image: nil, selectedImage: nil)
         messageNavi.tabBarItem = messageBarItem
         
         let profileVC = ProfileViewController.init()
         let profileNavi = MXNavigationController.init(rootViewController: profileVC);
-        let profileBarItem = UITabBarItem.init(title: "我的", image: nil, selectedImage: nil)
+        let profileBarItem = UITabBarItem.init(title: "更多", image: nil, selectedImage: nil)
         profileNavi.tabBarItem = profileBarItem
         
         let viewControllers = [homeNavi, discoverNavi, messageNavi, profileNavi]
