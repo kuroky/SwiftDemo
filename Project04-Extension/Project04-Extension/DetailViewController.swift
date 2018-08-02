@@ -28,7 +28,7 @@ class DetailViewController: UIViewController {
         }
         else if title == "定义实例方法和类型方法" {
             self.descLabel.text = "在Swift中，Extension可以给类和类型添加，比如你也可以给一个struct添加Extension，而在Objective-C中，你只能给类添加Extension。"
-            let jack = Student()
+            let jack = Student(name: "jack", age: 22)
             jack.name = "jack";
             jack.printCurrentStudentName()
         }

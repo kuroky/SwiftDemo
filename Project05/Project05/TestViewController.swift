@@ -17,11 +17,11 @@ class TestViewController: MXTableViewController {
     }
     
     func setupData() {
-        cellIdentifier = "testCellId"
-        dataList = ["", "", "", "", ""]
+        self.dataList = ["1", "2", "3", "4"]
     }
     
     func setupUI() {
+        self.cellIdentifier = "testCellId"
         tableView.snp.makeConstraints { (make) -> Void in
             make.edges.equalTo(self.view).inset(UIEdgeInsets.zero)
         }
@@ -29,14 +29,12 @@ class TestViewController: MXTableViewController {
         self.view.backgroundColor = UIColor.white
         tableView.register(UINib.init(nibName: "TestCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
         
-//        self.mx_reload { (cell: TestCell, item: AnyObject) in
-//            //print("12")
-//            cell.configCellItem(item)
-//        }
+        self.mx_reloadData { (cell, item) in
+            (cell as! TestCell).configCellItem(item)
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

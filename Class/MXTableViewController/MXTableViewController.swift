@@ -15,13 +15,20 @@ class MXTableViewController: UIViewController, UITableViewDataSource, UITableVie
     public var cellIdentifier: String!
     public var sectionIsSingle: Bool = true
 
+    /// cell统一高度
     public var rowHeight: CGFloat = 50
+    
+    /// 自定义单个cell高度
     public var cellHeightClosure: ((IndexPath) -> CGFloat)? // 设置cell高度
     
     public var sectionHeaderHeight: CGFloat = 0
+    
+    /// 自定义header高度
     public var headerHeightClosure: ((Int) -> CGFloat)? // header 高度
     
     public var sectionFooterHeight: CGFloat = 0
+    
+    /// 自定义footer高度
     public var footerHeightClosure: ((Int) -> CGFloat)? // footer 高度
     
     public var dataList: [Any]!
@@ -89,7 +96,7 @@ class MXTableViewController: UIViewController, UITableViewDataSource, UITableVie
         self.view.addSubview(self.tableView)
         
         self.tableView.dataSource = self
-        self.tableView.delegate = self
+        self.tableView.delegate = self        
     }
 
     override func didReceiveMemoryWarning() {

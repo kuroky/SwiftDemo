@@ -11,12 +11,12 @@
 		5B35330A204D45EF00428F62 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B353309204D45EF00428F62 /* TestViewController.swift */; };
 		5B35330D204D46B300428F62 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35330B204D46B300428F62 /* TestCell.swift */; };
 		5B35330E204D46B300428F62 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B35330C204D46B300428F62 /* TestCell.xib */; };
+		5B42CF9C2112D28200F6C35F /* MXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42CF9B2112D28200F6C35F /* MXTableViewController.swift */; };
 		5B45193F204D3E45006FB515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B45193E204D3E45006FB515 /* AppDelegate.swift */; };
 		5B451941204D3E45006FB515 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B451940204D3E45006FB515 /* ViewController.swift */; };
 		5B451944204D3E45006FB515 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B451942204D3E45006FB515 /* Main.storyboard */; };
 		5B451946204D3E45006FB515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B451945204D3E45006FB515 /* Assets.xcassets */; };
 		5B451949204D3E45006FB515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B451947204D3E45006FB515 /* LaunchScreen.storyboard */; };
-		5B451952204D3EE0006FB515 /* MXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B451951204D3EE0006FB515 /* MXTableViewController.swift */; };
 		5B8CDEEC204FB8B900A2981A /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8CDEEB204FB8B900A2981A /* TestView.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +25,7 @@
 		5B353309204D45EF00428F62 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		5B35330B204D46B300428F62 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 		5B35330C204D46B300428F62 /* TestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
+		5B42CF9B2112D28200F6C35F /* MXTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXTableViewController.swift; sourceTree = "<group>"; };
 		5B45193B204D3E45006FB515 /* Project05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project05.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B45193E204D3E45006FB515 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B451940204D3E45006FB515 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,7 +33,6 @@
 		5B451945204D3E45006FB515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B451948204D3E45006FB515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B45194A204D3E45006FB515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B451951204D3EE0006FB515 /* MXTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXTableViewController.swift; sourceTree = "<group>"; };
 		5B8CDEEB204FB8B900A2981A /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		78BC5164E94F2FD82097E294 /* Pods-Project05.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project05.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project05/Pods-Project05.release.xcconfig"; sourceTree = "<group>"; };
 		E76561EBF83EB5A869601044 /* Pods-Project05.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project05.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project05/Pods-Project05.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B42CF9A2112D28200F6C35F /* MXTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5B42CF9B2112D28200F6C35F /* MXTableViewController.swift */,
+			);
+			name = MXTableViewController;
+			path = ../../Class/MXTableViewController;
+			sourceTree = "<group>";
+		};
 		5B451932204D3E45006FB515 = {
 			isa = PBXGroup;
 			children = (
@@ -71,7 +80,7 @@
 		5B45193D204D3E45006FB515 /* Project05 */ = {
 			isa = PBXGroup;
 			children = (
-				5B451950204D3ED2006FB515 /* Class */,
+				5B42CF9A2112D28200F6C35F /* MXTableViewController */,
 				5B45193E204D3E45006FB515 /* AppDelegate.swift */,
 				5B451940204D3E45006FB515 /* ViewController.swift */,
 				5B353309204D45EF00428F62 /* TestViewController.swift */,
@@ -84,14 +93,6 @@
 				5B45194A204D3E45006FB515 /* Info.plist */,
 			);
 			path = Project05;
-			sourceTree = "<group>";
-		};
-		5B451950204D3ED2006FB515 /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				5B451951204D3EE0006FB515 /* MXTableViewController.swift */,
-			);
-			path = Class;
 			sourceTree = "<group>";
 		};
 		7EBDE1B615256DE9A0E9189E /* Frameworks */ = {
@@ -123,7 +124,6 @@
 				5B451938204D3E45006FB515 /* Frameworks */,
 				5B451939204D3E45006FB515 /* Resources */,
 				14A67C54ACAE71148C5A5E53 /* [CP] Embed Pods Frameworks */,
-				4AC21DCE3C982A1F996FD1AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,30 +190,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Project05/Pods-Project05-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PullToRefreshKit/PullToRefreshKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToRefreshKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project05/Pods-Project05-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4AC21DCE3C982A1F996FD1AB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project05/Pods-Project05-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B34EA75C9A3A068EB3D070BD /* [CP] Check Pods Manifest.lock */ = {
@@ -243,9 +230,9 @@
 			files = (
 				5B8CDEEC204FB8B900A2981A /* TestView.swift in Sources */,
 				5B451941204D3E45006FB515 /* ViewController.swift in Sources */,
-				5B451952204D3EE0006FB515 /* MXTableViewController.swift in Sources */,
 				5B35330D204D46B300428F62 /* TestCell.swift in Sources */,
 				5B35330A204D45EF00428F62 /* TestViewController.swift in Sources */,
+				5B42CF9C2112D28200F6C35F /* MXTableViewController.swift in Sources */,
 				5B45193F204D3E45006FB515 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

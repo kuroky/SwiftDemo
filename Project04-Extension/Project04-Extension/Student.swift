@@ -11,6 +11,11 @@ import UIKit
 class Student: NSObject {
     var name = ""
     var age = 1
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
 }
 
 // 定义实例方法和类型方法

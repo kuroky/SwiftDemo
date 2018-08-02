@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3EC07869926190DDAB33B527 /* Pods_Project02.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA59DB066D801DA38D098D7D /* Pods_Project02.framework */; };
-		5B451931204D35FE006FB515 /* MXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B451930204D35FE006FB515 /* MXTableViewController.swift */; };
+		5B42CF992112D25C00F6C35F /* MXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42CF982112D25C00F6C35F /* MXTableViewController.swift */; };
 		5B755C731EF11D9700383767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B755C721EF11D9700383767 /* AppDelegate.swift */; };
 		5B755C751EF11D9700383767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B755C741EF11D9700383767 /* ViewController.swift */; };
 		5B755C7A1EF11D9700383767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B755C791EF11D9700383767 /* Assets.xcassets */; };
@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		01EB5FF759E5E41FABDE0EAC /* Pods-Project02.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project02.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project02/Pods-Project02.release.xcconfig"; sourceTree = "<group>"; };
 		29F34C12105C99CAEAEE0027 /* Pods-Project02.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project02.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project02/Pods-Project02.debug.xcconfig"; sourceTree = "<group>"; };
-		5B451930204D35FE006FB515 /* MXTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXTableViewController.swift; sourceTree = "<group>"; };
+		5B42CF982112D25C00F6C35F /* MXTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXTableViewController.swift; sourceTree = "<group>"; };
 		5B755C6F1EF11D9700383767 /* Project02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B755C721EF11D9700383767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B755C741EF11D9700383767 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,18 +65,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		5B45192F204D35D8006FB515 /* Class */ = {
+		5B42CF972112D25C00F6C35F /* MXTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5B451930204D35FE006FB515 /* MXTableViewController.swift */,
+				5B42CF982112D25C00F6C35F /* MXTableViewController.swift */,
 			);
-			path = Class;
+			name = MXTableViewController;
+			path = ../Class/MXTableViewController;
 			sourceTree = "<group>";
 		};
 		5B755C661EF11D9700383767 = {
 			isa = PBXGroup;
 			children = (
-				5B45192F204D35D8006FB515 /* Class */,
+				5B42CF972112D25C00F6C35F /* MXTableViewController */,
 				5B755C711EF11D9700383767 /* Project02 */,
 				5B755C701EF11D9700383767 /* Products */,
 				5764FD5DF3247762CAF862FD /* Pods */,
@@ -230,7 +231,7 @@
 				5B755C731EF11D9700383767 /* AppDelegate.swift in Sources */,
 				5B755C911EF1247400383767 /* DetailItem.swift in Sources */,
 				5B755C8A1EF1219B00383767 /* DetailCell.swift in Sources */,
-				5B451931204D35FE006FB515 /* MXTableViewController.swift in Sources */,
+				5B42CF992112D25C00F6C35F /* MXTableViewController.swift in Sources */,
 				5B755C8E1EF1232900383767 /* SubViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

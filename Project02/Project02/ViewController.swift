@@ -56,6 +56,14 @@ class ViewController: MXTableViewController {
         self.mx_footRefresh {
             self.tableView.switchRefreshFooter(to: .normal)
         }
+        
+        self.cellHeightClosure  = { ( indexPath ) in
+            return 100;
+        }
+        
+        self.headerHeightClosure  = { (section) in
+            return 15
+        }
     }
     
     override func didReceiveMemoryWarning() {

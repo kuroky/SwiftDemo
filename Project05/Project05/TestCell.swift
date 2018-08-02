@@ -15,7 +15,7 @@ class TestCell: UITableViewCell {
         // Initialization code
     }
 
-    func configCellItem(_ item: AnyObject) {
+    func configCellItem(_ item: Any) {
         textLabel?.text = "12"
     }
     

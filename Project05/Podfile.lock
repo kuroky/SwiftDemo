@@ -1,12 +1,20 @@
 PODS:
+  - PullToRefreshKit (0.8.6)
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
+  - PullToRefreshKit (~> 0.8.6)
   - SnapKit (~> 4.0.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PullToRefreshKit
+    - SnapKit
+
 SPEC CHECKSUMS:
+  PullToRefreshKit: 172df52ab9c6cb2c1d4b1872b49f448d6291523f
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 4f00953d89517fc58f7ebe2875556438e53eb64c
+PODFILE CHECKSUM: f922a9c614d50d686aacc4f0a293890c30690262
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

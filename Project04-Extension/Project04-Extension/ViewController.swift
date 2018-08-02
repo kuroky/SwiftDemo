@@ -11,7 +11,7 @@ import UIKit
 let kTableViewCellid = "tableViewCellid"
 
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController {
     
     var tableView: UITableView!
     var dataList = [String]()
@@ -41,6 +41,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         self.tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: kTableViewCellid)
     }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+}
+
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataList.count
@@ -59,12 +67,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         detailVC.navigationItem.title = title
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-
