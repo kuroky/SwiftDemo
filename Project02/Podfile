@@ -5,8 +5,7 @@ target 'Project02' do
     
 use_frameworks!
 pod 'Kingfisher', '~> 4.6.1'
-pod 'PullToRefreshKit'
+pod 'PullToRefreshKit', '~> 0.8.6'
 pod 'SnapKit', '~> 4.0.0'
-#pod 'Alamofire', '4.4.0'
 
 end

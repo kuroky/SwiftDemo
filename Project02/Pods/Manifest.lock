@@ -1,11 +1,11 @@
 PODS:
   - Kingfisher (4.6.1)
-  - PullToRefreshKit (0.8.2)
+  - PullToRefreshKit (0.8.6)
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
   - Kingfisher (~> 4.6.1)
-  - PullToRefreshKit
+  - PullToRefreshKit (~> 0.8.6)
   - SnapKit (~> 4.0.0)
 
 SPEC REPOS:
@@ -16,9 +16,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
-  PullToRefreshKit: 0a2a019bf094b8beba18c8a1bedfb1fb67ee70fd
+  PullToRefreshKit: 172df52ab9c6cb2c1d4b1872b49f448d6291523f
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 2e6743cc342f5e58e37f6df78c81ff0dc10002bc
+PODFILE CHECKSUM: 0f28efbdf914704b1b5e62b2dd144b057ed611ba
 
 COCOAPODS: 1.5.3

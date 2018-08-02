@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import PullToRefreshKit
 
 class MXTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -31,6 +32,43 @@ class MXTableViewController: UIViewController, UITableViewDataSource, UITableVie
     private var configClosure: CellClosure?
     private var configIndexPathClosure: CellIndexPathClosure?
     
+    typealias RefreshClosure = () -> Void
+    
+    public var hideHeaderRefresh: Bool? {
+        set {
+            guard newValue == false else {
+                return
+            }
+            
+            self.tableView.configRefreshHeader(container: self) { [weak self] in
+                self?.headRefreshClosure?()
+            }
+        }
+        
+        get {
+            return false
+        }
+    }
+    private var headRefreshClosure: RefreshClosure?
+    
+    public var hideFooterRefresh: Bool? {
+        set {
+            guard newValue == false else {
+                return
+            }
+            
+            self.tableView.configRefreshFooter(container: self) { [weak self] in
+                self?.footRefreshClosure?()
+            }
+        }
+        
+        get {
+            return false
+        }
+    }
+    
+    private var footRefreshClosure: RefreshClosure?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mx_setupData()
@@ -49,7 +87,7 @@ class MXTableViewController: UIViewController, UITableViewDataSource, UITableVie
     private func mx_setupTableView() {
         self.tableView = UITableView(frame: self.view.bounds, style: .plain)
         self.view.addSubview(self.tableView)
-    
+        
         self.tableView.dataSource = self
         self.tableView.delegate = self
     }
@@ -66,6 +104,14 @@ extension MXTableViewController {
     
     func mx_reloadIndexPath(_ closure: @escaping CellIndexPathClosure) {
         self.configIndexPathClosure = closure
+    }
+    
+    func mx_headRefresh(_ closure: @escaping RefreshClosure) {
+        self.headRefreshClosure = closure
+    }
+    
+    func mx_footRefresh(_ closure: @escaping RefreshClosure) {
+        self.footRefreshClosure = closure
     }
 }
 

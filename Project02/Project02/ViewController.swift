@@ -26,9 +26,6 @@ class ViewController: MXTableViewController {
     func setupUI() {
         self.navigationItem.title = "list"
         self.setupTableView()
-//
-//
-//
     }
     
     func setupTableView() {
@@ -45,15 +42,19 @@ class ViewController: MXTableViewController {
             make.bottom.equalTo(self.view.snp.bottom)
         }
         
-        let header = DefaultRefreshHeader.header()
-        self.tableView.configRefreshHeader(with: header) {
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(1 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {
-                self.tableView.switchRefreshHeader(to: .normal(.success, 0))
-            })
-        }
+        //self.hideHeaderRefresh = false
+        self.hideFooterRefresh = false
         
         self.mx_reloadData { (cell, item) in
             (cell as! DetailCell).configCellItem(item as! DetailItem)
+        }
+        
+        self.mx_headRefresh {
+            self.tableView.switchRefreshHeader(to: .normal(.success, 0))
+        }
+        
+        self.mx_footRefresh {
+            self.tableView.switchRefreshFooter(to: .normal)
         }
     }
     
