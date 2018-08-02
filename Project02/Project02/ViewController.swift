@@ -42,7 +42,7 @@ class ViewController: MXTableViewController {
             make.bottom.equalTo(self.view.snp.bottom)
         }
         
-        //self.hideHeaderRefresh = false
+        self.hideHeaderRefresh = false
         self.hideFooterRefresh = false
         
         self.mx_reloadData { (cell, item) in

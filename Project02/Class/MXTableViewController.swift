@@ -98,18 +98,23 @@ class MXTableViewController: UIViewController, UITableViewDataSource, UITableVie
 }
 
 extension MXTableViewController {
+    
+    /// TableView 加载数据
     func mx_reloadData(_ closure: @escaping CellClosure) {
         self.configClosure = closure
     }
     
+    /// TableView 加载数据 with indexPath
     func mx_reloadIndexPath(_ closure: @escaping CellIndexPathClosure) {
         self.configIndexPathClosure = closure
     }
     
+    /// header refresh
     func mx_headRefresh(_ closure: @escaping RefreshClosure) {
         self.headRefreshClosure = closure
     }
     
+    /// footer refresh
     func mx_footRefresh(_ closure: @escaping RefreshClosure) {
         self.footRefreshClosure = closure
     }
@@ -189,8 +194,6 @@ extension MXTableViewController {
     
     //MARK:- UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
         
     }
 }
