@@ -32,7 +32,12 @@ class MXTableViewController: UIViewController, UITableViewDataSource, UITableVie
     public var footerHeightClosure: ((Int) -> CGFloat)? // footer 高度
     
     public var dataList: [Any]!
-    public var tableView: UITableView!
+    lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: self.view.bounds, style: .plain)
+        tableView.dataSource = self
+        tableView.delegate = self
+        return tableView
+    } ()
     
     typealias CellClosure = (Any, Any) -> Void  //cell, item
     typealias CellIndexPathClosure = (Any, Any, IndexPath) -> Void  //cell, item, indexPath
@@ -92,11 +97,7 @@ class MXTableViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     private func mx_setupTableView() {
-        self.tableView = UITableView(frame: self.view.bounds, style: .plain)
-        self.view.addSubview(self.tableView)
-        
-        self.tableView.dataSource = self
-        self.tableView.delegate = self        
+        self.view.addSubview(self.tableView)        
     }
 
     override func didReceiveMemoryWarning() {
