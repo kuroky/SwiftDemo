@@ -10,10 +10,7 @@ import UIKit
 import SnapKit
 import Moya
 
-class ViewController: UIViewController {
-    
-    var tableView: UITableView!
-    var dataList: [String]!
+class ViewController: MXTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,22 +25,24 @@ class ViewController: UIViewController {
     }
     
     func setupData() {
-        dataList = ["Moya", "链式", "AFN式"]
+        self.dataList = ["Moya", "链式", "AFN式"]
     }
     
     func setupTableView() {
-        tableView = UITableView(frame: CGRect.zero, style: .plain)
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.rowHeight = 60
-        self.view.addSubview(tableView)
+        self.rowHeight = 60;
+        self.cellIdentifier = "cellId"
+        self.view.addSubview(self.tableView)
         tableView.snp.makeConstraints { (make) in
             make.leading.equalTo(self.view.snp.leading)
             make.trailing.equalTo(self.view.snp.trailing)
             make.top.equalTo(self.view.snp.top)
             make.bottom.equalTo(self.view.snp.bottom)
         }
-        tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "tableViewCell")
+        self.tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "tableViewCell")
+        
+        self.mx_reloadData { (cell, item) in
+            (cell as! UITableViewCell).textLabel?.text = item as? String
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,21 +50,12 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataList.count
-    }
+extension ViewController {
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath)
-        cell.textLabel?.text = String(dataList[indexPath.row])
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let title = dataList[indexPath.row]
+        let title = self.dataList[indexPath.row] as? String
         if title == "Moya" {
             HttpRequest.fetchData(Api: TestAPI.self, target: .eventList(limit: 1, offset: 0), success: { (json) in
                 do {

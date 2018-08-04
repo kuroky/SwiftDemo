@@ -12,6 +12,7 @@
 		5B73AFFE2109BA7D00B2CC80 /* TestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73AFFD2109BA7D00B2CC80 /* TestAPI.swift */; };
 		5B73B0012109BCA700B2CC80 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73B0002109BCA700B2CC80 /* HttpRequest.swift */; };
 		5B73B0032109CD1600B2CC80 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73B0022109CD1600B2CC80 /* TestModel.swift */; };
+		5BAE5379211567A30069C874 /* MXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAE5378211567A30069C874 /* MXTableViewController.swift */; };
 		5BDE78291EE92CE8000145DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE78281EE92CE8000145DF /* AppDelegate.swift */; };
 		5BDE782B1EE92CE8000145DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE782A1EE92CE8000145DF /* ViewController.swift */; };
 		5BDE78301EE92CE8000145DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDE782F1EE92CE8000145DF /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		5B73AFFD2109BA7D00B2CC80 /* TestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPI.swift; sourceTree = "<group>"; };
 		5B73B0002109BCA700B2CC80 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		5B73B0022109CD1600B2CC80 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		5BAE5378211567A30069C874 /* MXTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXTableViewController.swift; sourceTree = "<group>"; };
 		5BDE78251EE92CE8000145DF /* Project01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDE78281EE92CE8000145DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BDE782A1EE92CE8000145DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,15 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		5BAE5377211567A30069C874 /* MXTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5BAE5378211567A30069C874 /* MXTableViewController.swift */,
+			);
+			name = MXTableViewController;
+			path = ../../Class/MXTableViewController;
+			sourceTree = "<group>";
+		};
 		5BDE781C1EE92CE8000145DF = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +149,7 @@
 		5BDE78271EE92CE8000145DF /* Project01 */ = {
 			isa = PBXGroup;
 			children = (
+				5BAE5377211567A30069C874 /* MXTableViewController */,
 				5B73AFF62109B9C600B2CC80 /* HttpRequest */,
 				5BDE78281EE92CE8000145DF /* AppDelegate.swift */,
 				5BDE782A1EE92CE8000145DF /* ViewController.swift */,
@@ -227,6 +239,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PullToRefreshKit/PullToRefreshKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
@@ -235,6 +248,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToRefreshKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -270,6 +284,7 @@
 			files = (
 				5B73AFFE2109BA7D00B2CC80 /* TestAPI.swift in Sources */,
 				5B73B0012109BCA700B2CC80 /* HttpRequest.swift in Sources */,
+				5BAE5379211567A30069C874 /* MXTableViewController.swift in Sources */,
 				5B73B0032109CD1600B2CC80 /* TestModel.swift in Sources */,
 				5BDE782B1EE92CE8000145DF /* ViewController.swift in Sources */,
 				5B491F78211015C100E0E5DA /* NetWorkTool.swift in Sources */,
