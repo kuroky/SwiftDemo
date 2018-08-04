@@ -38,7 +38,7 @@ class ViewController: MXTableViewController {
             make.top.equalTo(self.view.snp.top)
             make.bottom.equalTo(self.view.snp.bottom)
         }
-        self.tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "tableViewCell")
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
         
         self.mx_reloadData { (cell, item) in
             (cell as! UITableViewCell).textLabel?.text = item as? String
