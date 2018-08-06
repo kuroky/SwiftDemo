@@ -32,6 +32,8 @@
 		5B89B86C1EF2592D00A30A0E /* DiscoverListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89B86A1EF2592D00A30A0E /* DiscoverListCell.swift */; };
 		5B89B86D1EF2592D00A30A0E /* DiscoverListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B89B86B1EF2592D00A30A0E /* DiscoverListCell.xib */; };
 		5B89B8721EF279C900A30A0E /* MXAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89B8711EF279C900A30A0E /* MXAppConfig.swift */; };
+		5BE15B7521183F0E004454EC /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE15B7421183F0E004454EC /* ContactsViewController.swift */; };
+		5BE15B7821184E23004454EC /* MXColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE15B7721184E23004454EC /* MXColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		5B89B86A1EF2592D00A30A0E /* DiscoverListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverListCell.swift; sourceTree = "<group>"; };
 		5B89B86B1EF2592D00A30A0E /* DiscoverListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverListCell.xib; sourceTree = "<group>"; };
 		5B89B8711EF279C900A30A0E /* MXAppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAppConfig.swift; sourceTree = "<group>"; };
+		5BE15B7421183F0E004454EC /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		5BE15B7721184E23004454EC /* MXColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXColor.swift; sourceTree = "<group>"; };
 		E1F7E9F009C4E451D85B486A /* Pods_Project03.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project03.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,10 +114,12 @@
 		5B89B8031EF1400E00A30A0E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5BE15B7621184D40004454EC /* Common */,
 				5B89B8111EF1416000A30A0E /* Base */,
 				5B89B8211EF1427700A30A0E /* Homepage */,
-				5B89B8191EF1427700A30A0E /* Discovery */,
 				5B89B8501EF22DB400A30A0E /* Message */,
+				5BE15B7221183EDB004454EC /* Contacts */,
+				5B89B8191EF1427700A30A0E /* Discovery */,
 				5B89B8251EF1427700A30A0E /* Profile */,
 			);
 			path = Classes;
@@ -344,6 +350,30 @@
 			name = List;
 			sourceTree = "<group>";
 		};
+		5BE15B7221183EDB004454EC /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				5BE15B7321183EEB004454EC /* ViewControllers */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		5BE15B7321183EEB004454EC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BE15B7421183F0E004454EC /* ContactsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5BE15B7621184D40004454EC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5BE15B7721184E23004454EC /* MXColor.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		80F0B84DB750EADAEFB8D720 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +494,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Project03/Pods-Project03-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -472,6 +503,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -501,8 +533,10 @@
 				5B89B8161EF1419D00A30A0E /* MXNavigationController.swift in Sources */,
 				5B89B84A1EF22A1600A30A0E /* AppDelegate.swift in Sources */,
 				5B89B84E1EF22BD500A30A0E /* HomepageCell.swift in Sources */,
+				5BE15B7821184E23004454EC /* MXColor.swift in Sources */,
 				5B89B85A1EF22DC800A30A0E /* MessageViewController.swift in Sources */,
 				5B89B82B1EF142B000A30A0E /* HomepageViewController.swift in Sources */,
+				5BE15B7521183F0E004454EC /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,7 +670,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "$(SRCROOT)/Project03/Resource/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuroky.Project03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -651,7 +685,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "$(SRCROOT)/Project03/Resource/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuroky.Project03;
 				PRODUCT_NAME = "$(TARGET_NAME)";

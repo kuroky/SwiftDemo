@@ -4,8 +4,9 @@ platform :ios, '10.0'
 target 'Project03' do
   use_frameworks!
 
-pod 'Moya', '~> 11.0.2'
-pod 'Kingfisher', '~> 4.8.0'
-pod 'IQKeyboardManagerSwift', '6.1.1'
+pod 'Moya', '~> 11.0.2' # http request
+pod 'Kingfisher', '~> 4.8.0' # image download
+pod 'IQKeyboardManagerSwift', '6.1.1' # keyboard manager
+pod 'Hue', '~> 3.0.1' # hex color
 
 end
