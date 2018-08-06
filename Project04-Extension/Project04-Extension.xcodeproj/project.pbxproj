@@ -15,9 +15,13 @@
 		5B8EAAB31F5D2F3000DC825B /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8EAAB21F5D2F3000DC825B /* Student.swift */; };
 		5B8EAAB51F5D2FE800DC825B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B8EAAB41F5D2FE800DC825B /* DetailViewController.xib */; };
 		5B8EAAB91F5D393800DC825B /* TestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8EAAB81F5D393800DC825B /* TestExtension.swift */; };
+		5BE15B7021182F7E004454EC /* MXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE15B6F21182F7E004454EC /* MXTableViewController.swift */; };
+		A106E9CCB9822611F35BC606 /* Pods_Project04_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777BCF763D2F8AA0235D970C /* Pods_Project04_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CCD4DECBD7596C2B2025ECD /* Pods-Project04-Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project04-Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project04-Extension/Pods-Project04-Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		4F259D753C045A9376420EE2 /* Pods-Project04-Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project04-Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project04-Extension/Pods-Project04-Extension.release.xcconfig"; sourceTree = "<group>"; };
 		5B8EAA971F5CF5F000DC825B /* Project04-Extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project04-Extension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8EAA9A1F5CF5F000DC825B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B8EAA9C1F5CF5F000DC825B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		5B8EAAB21F5D2F3000DC825B /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		5B8EAAB41F5D2FE800DC825B /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		5B8EAAB81F5D393800DC825B /* TestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestExtension.swift; sourceTree = "<group>"; };
+		5BE15B6F21182F7E004454EC /* MXTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXTableViewController.swift; sourceTree = "<group>"; };
+		777BCF763D2F8AA0235D970C /* Pods_Project04_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project04_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A106E9CCB9822611F35BC606 /* Pods_Project04_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +53,8 @@
 			children = (
 				5B8EAA991F5CF5F000DC825B /* Project04-Extension */,
 				5B8EAA981F5CF5F000DC825B /* Products */,
+				F0F2CE48C2A23B6ACDEE8188 /* Pods */,
+				6D1565054A851B4D54762AA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +69,7 @@
 		5B8EAA991F5CF5F000DC825B /* Project04-Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5BE15B6E21182F7E004454EC /* MXTableViewController */,
 				5B8EAA9A1F5CF5F000DC825B /* AppDelegate.swift */,
 				5B8EAA9C1F5CF5F000DC825B /* ViewController.swift */,
 				5B8EAAAC1F5D278200DC825B /* DetailViewController.swift */,
@@ -73,6 +83,32 @@
 			path = "Project04-Extension";
 			sourceTree = "<group>";
 		};
+		5BE15B6E21182F7E004454EC /* MXTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5BE15B6F21182F7E004454EC /* MXTableViewController.swift */,
+			);
+			name = MXTableViewController;
+			path = ../../Class/MXTableViewController;
+			sourceTree = "<group>";
+		};
+		6D1565054A851B4D54762AA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				777BCF763D2F8AA0235D970C /* Pods_Project04_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0F2CE48C2A23B6ACDEE8188 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CCD4DECBD7596C2B2025ECD /* Pods-Project04-Extension.debug.xcconfig */,
+				4F259D753C045A9376420EE2 /* Pods-Project04-Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B8EAAA91F5CF5F000DC825B /* Build configuration list for PBXNativeTarget "Project04-Extension" */;
 			buildPhases = (
+				EE238E739D95F51BB19337FC /* [CP] Check Pods Manifest.lock */,
 				5B8EAA931F5CF5F000DC825B /* Sources */,
 				5B8EAA941F5CF5F000DC825B /* Frameworks */,
 				5B8EAA951F5CF5F000DC825B /* Resources */,
+				2E7B1850F01EF906995EE975 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -100,7 +138,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Emucoo;
 				TargetAttributes = {
 					5B8EAA961F5CF5F000DC825B = {
@@ -141,6 +179,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E7B1850F01EF906995EE975 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Project04-Extension/Pods-Project04-Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PullToRefreshKit/PullToRefreshKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToRefreshKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project04-Extension/Pods-Project04-Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE238E739D95F51BB19337FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project04-Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B8EAA931F5CF5F000DC825B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -150,6 +229,7 @@
 				5B8EAAB91F5D393800DC825B /* TestExtension.swift in Sources */,
 				5B8EAA9D1F5CF5F000DC825B /* ViewController.swift in Sources */,
 				5B8EAAB31F5D2F3000DC825B /* Student.swift in Sources */,
+				5BE15B7021182F7E004454EC /* MXTableViewController.swift in Sources */,
 				5B8EAA9B1F5CF5F000DC825B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,15 +258,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -228,15 +316,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -263,6 +359,7 @@
 		};
 		5B8EAAAA1F5CF5F000DC825B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CCD4DECBD7596C2B2025ECD /* Pods-Project04-Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DCBW8CKASN;
@@ -270,12 +367,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.emucoo.Project04-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		5B8EAAAB1F5CF5F000DC825B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F259D753C045A9376420EE2 /* Pods-Project04-Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DCBW8CKASN;
@@ -283,7 +381,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.emucoo.Project04-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -306,6 +404,7 @@
 				5B8EAAAB1F5CF5F000DC825B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

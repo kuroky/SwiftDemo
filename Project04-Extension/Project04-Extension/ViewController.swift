@@ -7,15 +7,12 @@
 //
 
 import UIKit
+import SnapKit
 
 let kTableViewCellid = "tableViewCellid"
 
 
-class ViewController: UIViewController {
-    
-    var tableView: UITableView!
-    var dataList = [String]()
-    
+class ViewController: MXTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupData()
@@ -33,13 +30,21 @@ class ViewController: UIViewController {
     
     func setupUI() {
         self.navigationItem.title = "Swift-Extension"
-        self.tableView = UITableView.init(frame: self.view.bounds, style: .plain)
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
-        self.tableView.rowHeight = 100
+        self.rowHeight = 100
+        self.cellIdentifier = kTableViewCellid
         self.view.addSubview(self.tableView)
+        self.tableView.snp.makeConstraints { (make) in
+            make.leading.equalTo(self.view.snp.leading)
+            make.trailing.equalTo(self.view.snp.trailing)
+            make.top.equalTo(self.view.snp.top)
+            make.bottom.equalTo(self.view.snp.bottom)
+        }
         
         self.tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: kTableViewCellid)
+        
+        self.mx_reloadData { (cell, item) in
+            (cell as! UITableViewCell).textLabel?.text = (item as! String)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,21 +53,11 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.dataList.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: kTableViewCellid, for: indexPath)
-        cell.textLabel?.text = self.dataList[indexPath.row]
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+extension ViewController {
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let title = self.dataList[indexPath.row]
+        let title = self.dataList[indexPath.row] as! String
         let detailVC = DetailViewController.init()
         detailVC.navigationItem.title = title
         self.navigationController?.pushViewController(detailVC, animated: true)
