@@ -10,9 +10,8 @@ import UIKit
 
 let kMessageSortCellId = "messageSortCellId"
 
-class MessageViewController: MXViewController, UITableViewDataSource, UITableViewDelegate {
+class MessageViewController: MXTableViewController {
 
-    @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
@@ -25,21 +24,15 @@ class MessageViewController: MXViewController, UITableViewDataSource, UITableVie
     
     func setupTableView() {
         self.tableView.rowHeight = 60
+        self.cellIdentifier = kMessageSortCellId
         let nib:UINib! = UINib.init(nibName: "MsgSortListCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: kMessageSortCellId)
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:MsgSortListCell = tableView.dequeueReusableCell(withIdentifier: kMessageSortCellId, for: indexPath) as! MsgSortListCell
-        return cell
+        
+        self.mx_reloadData { (cell, item) in
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
