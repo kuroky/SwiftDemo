@@ -8,7 +8,7 @@ pod 'Moya', '~> 11.0.2' # http request
 pod 'Kingfisher', '~> 4.8.0' # image download
 pod 'IQKeyboardManagerSwift', '6.1.1' # keyboard manager
 pod 'Hue', '~> 3.0.1' # hex color
-pod 'SnapKit', '~> 4.0.0'
-pod 'PullToRefreshKit', '~> 0.8.6'
+pod 'SnapKit', '~> 4.0.0' # autolayout
+pod 'PullToRefreshKit', '~> 0.8.6' # refresh
 
 end

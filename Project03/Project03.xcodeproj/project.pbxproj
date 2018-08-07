@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		534618A27457F8B57D4A98BB /* Pods_Project03.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F7E9F009C4E451D85B486A /* Pods_Project03.framework */; };
+		5B78991F21193528005B5FD9 /* UINavigationItem+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */; };
 		5B89B8091EF1400E00A30A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B89B8051EF1400E00A30A0E /* Assets.xcassets */; };
 		5B89B80A1EF1400E00A30A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B89B8061EF1400E00A30A0E /* LaunchScreen.storyboard */; };
 		5B89B8101EF1410900A30A0E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89B80F1EF1410900A30A0E /* RootViewController.swift */; };
@@ -32,14 +33,15 @@
 		5B89B86D1EF2592D00A30A0E /* DiscoverListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B89B86B1EF2592D00A30A0E /* DiscoverListCell.xib */; };
 		5B89B8721EF279C900A30A0E /* MXAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89B8711EF279C900A30A0E /* MXAppConfig.swift */; };
 		5BE15B7521183F0E004454EC /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE15B7421183F0E004454EC /* ContactsViewController.swift */; };
-		5BE15B7821184E23004454EC /* UIColor+MXColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE15B7721184E23004454EC /* UIColor+MXColor.swift */; };
-		5BE15B7A21185062004454EC /* UIImage+MXImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE15B7921185062004454EC /* UIImage+MXImage.swift */; };
+		5BE15B7821184E23004454EC /* UIColor+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE15B7721184E23004454EC /* UIColor+MXAdd.swift */; };
+		5BE15B7A21185062004454EC /* UIImage+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE15B7921185062004454EC /* UIImage+MXAdd.swift */; };
 		5BE15B7C21185526004454EC /* MXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE15B7B21185526004454EC /* MXTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3752151BA460C7A0524A299C /* Pods-Project03.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project03.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project03/Pods-Project03.debug.xcconfig"; sourceTree = "<group>"; };
 		40380CC7929BE92D6FB6AA2C /* Pods-Project03.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project03.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project03/Pods-Project03.release.xcconfig"; sourceTree = "<group>"; };
+		5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+MXAdd.swift"; sourceTree = "<group>"; };
 		5B89B7EE1EF13F9B00A30A0E /* Project03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B89B8051EF1400E00A30A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B89B8071EF1400E00A30A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,8 +68,8 @@
 		5B89B86B1EF2592D00A30A0E /* DiscoverListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverListCell.xib; sourceTree = "<group>"; };
 		5B89B8711EF279C900A30A0E /* MXAppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAppConfig.swift; sourceTree = "<group>"; };
 		5BE15B7421183F0E004454EC /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
-		5BE15B7721184E23004454EC /* UIColor+MXColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+MXColor.swift"; sourceTree = "<group>"; };
-		5BE15B7921185062004454EC /* UIImage+MXImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+MXImage.swift"; sourceTree = "<group>"; };
+		5BE15B7721184E23004454EC /* UIColor+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+MXAdd.swift"; sourceTree = "<group>"; };
+		5BE15B7921185062004454EC /* UIImage+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+MXAdd.swift"; sourceTree = "<group>"; };
 		5BE15B7B21185526004454EC /* MXTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXTableViewController.swift; sourceTree = "<group>"; };
 		E1F7E9F009C4E451D85B486A /* Pods_Project03.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project03.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 			children = (
 				5B89B8031EF1400E00A30A0E /* Classes */,
 				5B89B80E1EF140C400A30A0E /* RootView */,
+				5BE15B7621184D40004454EC /* Common */,
 				5B89B8421EF14A9F00A30A0E /* Define */,
 				5B89B8041EF1400E00A30A0E /* Resource */,
 			);
@@ -117,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				5B89B8111EF1416000A30A0E /* Base */,
-				5BE15B7621184D40004454EC /* Common */,
 				5B89B8211EF1427700A30A0E /* Homepage */,
 				5B89B8501EF22DB400A30A0E /* Message */,
 				5BE15B7221183EDB004454EC /* Contacts */,
@@ -305,8 +307,8 @@
 			isa = PBXGroup;
 			children = (
 				5B89B8511EF22DB400A30A0E /* Models */,
-				5B89B8521EF22DB400A30A0E /* ViewControllers */,
 				5B89B8551EF22DB400A30A0E /* Views */,
+				5B89B8521EF22DB400A30A0E /* Controllers */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -318,12 +320,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		5B89B8521EF22DB400A30A0E /* ViewControllers */ = {
+		5B89B8521EF22DB400A30A0E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				5B89B8581EF22DC800A30A0E /* MessageViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		5B89B8551EF22DB400A30A0E /* Views */ = {
@@ -371,8 +373,9 @@
 		5BE15B7621184D40004454EC /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				5BE15B7721184E23004454EC /* UIColor+MXColor.swift */,
-				5BE15B7921185062004454EC /* UIImage+MXImage.swift */,
+				5BE15B7721184E23004454EC /* UIColor+MXAdd.swift */,
+				5BE15B7921185062004454EC /* UIImage+MXAdd.swift */,
+				5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				5B89B8671EF255BA00A30A0E /* MsgSortListCell.swift in Sources */,
 				5B89B8311EF143D900A30A0E /* ProfileViewController.swift in Sources */,
 				5B89B8101EF1410900A30A0E /* RootViewController.swift in Sources */,
+				5B78991F21193528005B5FD9 /* UINavigationItem+MXAdd.swift in Sources */,
 				5B89B86C1EF2592D00A30A0E /* DiscoverListCell.swift in Sources */,
 				5B89B8441EF14AF700A30A0E /* MXDefine.swift in Sources */,
 				5B89B8351EF143E400A30A0E /* DiscoverViewController.swift in Sources */,
@@ -540,11 +544,11 @@
 				5BE15B7C21185526004454EC /* MXTableViewController.swift in Sources */,
 				5B89B84A1EF22A1600A30A0E /* AppDelegate.swift in Sources */,
 				5B89B84E1EF22BD500A30A0E /* HomepageCell.swift in Sources */,
-				5BE15B7821184E23004454EC /* UIColor+MXColor.swift in Sources */,
+				5BE15B7821184E23004454EC /* UIColor+MXAdd.swift in Sources */,
 				5B89B85A1EF22DC800A30A0E /* MessageViewController.swift in Sources */,
 				5B89B82B1EF142B000A30A0E /* HomepageViewController.swift in Sources */,
 				5BE15B7521183F0E004454EC /* ContactsViewController.swift in Sources */,
-				5BE15B7A21185062004454EC /* UIImage+MXImage.swift in Sources */,
+				5BE15B7A21185062004454EC /* UIImage+MXAdd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

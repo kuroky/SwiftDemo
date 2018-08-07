@@ -19,6 +19,14 @@ class RootViewController: UITabBarController {
     private func setupAppearance() {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.lightGray], for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.colorOfHexString(hexString: "68BB1E")], for: .selected)
+        
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().barTintColor = UIColor.colorOfHexString(hexString: "1A1A1A")
+        UINavigationBar.appearance().isTranslucent = true
+        
+        let attributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17),
+                          NSAttributedStringKey.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = attributes
     }
 
     private func setupViewControllers() {
@@ -45,11 +53,11 @@ class RootViewController: UITabBarController {
     }
 
     private func normalImage(name: String) -> UIImage {
-        return (UIImage(named: name)?.withRenderingMode(.alwaysOriginal))!
+        return UIImage.originalImage(name: name)
     }
     
     private func selectImage(name: String) -> UIImage {
-        return (UIImage(named: name)?.withRenderingMode(.alwaysOriginal))!
+        return UIImage.originalImage(name: name)
     }
     
     override func didReceiveMemoryWarning() {

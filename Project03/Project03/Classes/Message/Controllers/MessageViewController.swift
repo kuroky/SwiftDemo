@@ -8,10 +8,10 @@
 
 import UIKit
 
-let kMessageSortCellId = "messageSortCellId"
-
 class MessageViewController: MXTableViewController {
-
+    
+    let kMessageSortCellId = "messageSortCellId"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
@@ -20,6 +20,10 @@ class MessageViewController: MXTableViewController {
     func setupUI() {
         self.navigationItem.title = "消息"
         self.setupTableView()
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(imgName: "barbuttonicon_add", closure: { _ in
+            
+        })
     }
     
     func setupTableView() {
