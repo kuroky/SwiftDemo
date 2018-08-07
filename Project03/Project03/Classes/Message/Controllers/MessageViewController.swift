@@ -14,7 +14,13 @@ class MessageViewController: MXTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupData()
         self.setupUI()
+        self.fetchData()
+    }
+    
+    func setupData() {
+          
     }
     
     func setupUI() {
@@ -27,13 +33,34 @@ class MessageViewController: MXTableViewController {
     }
     
     func setupTableView() {
-        self.tableView.rowHeight = 60
+        self.tableView.rowHeight = 65
         self.cellIdentifier = kMessageSortCellId
         let nib:UINib! = UINib.init(nibName: "MsgSortListCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: kMessageSortCellId)
         
         self.mx_reloadData { (cell, item) in
+            
+
+            print((item as! MsgListItem).nickname ?? "nil")
         }
+    }
+    
+    func fetchData() {
+        guard let json = Data.dataFromJsonFile(fileName: "message") else { return }
+        
+        let decoder = JSONDecoder()
+        guard let msgList = try? decoder.decode(MsgListData.self, from: json) else { return }
+        
+        guard msgList.data != nil else { return }
+        
+        self.dataList.append(contentsOf: msgList.data!)
+        
+        self.tableView.reloadData()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
     }
     
     override func didReceiveMemoryWarning() {

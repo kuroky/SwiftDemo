@@ -31,11 +31,12 @@ class MXTableViewController: MXViewController, UITableViewDataSource, UITableVie
     /// 自定义footer高度
     public var footerHeightClosure: ((Int) -> CGFloat)? // footer 高度
     
-    public var dataList: [Any]!
+    public var dataList = Array<Any>()
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: self.view.bounds, style: .plain)
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.tableFooterView = UIView()
         return tableView
     } ()
     

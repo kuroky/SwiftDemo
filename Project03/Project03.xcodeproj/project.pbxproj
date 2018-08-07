@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		534618A27457F8B57D4A98BB /* Pods_Project03.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F7E9F009C4E451D85B486A /* Pods_Project03.framework */; };
 		5B78991F21193528005B5FD9 /* UINavigationItem+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */; };
+		5B78992A21198DB1005B5FD9 /* MsgListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78992921198DB1005B5FD9 /* MsgListItem.swift */; };
+		5B78992D21199A23005B5FD9 /* NSData+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78992C21199A23005B5FD9 /* NSData+MXAdd.swift */; };
+		5B7899362119A157005B5FD9 /* chat.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B7899322119A156005B5FD9 /* chat.json */; };
+		5B7899372119A157005B5FD9 /* moments.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B7899332119A156005B5FD9 /* moments.json */; };
+		5B7899382119A157005B5FD9 /* contact.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B7899342119A156005B5FD9 /* contact.json */; };
+		5B7899392119A157005B5FD9 /* message.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B7899352119A156005B5FD9 /* message.json */; };
 		5B89B8091EF1400E00A30A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B89B8051EF1400E00A30A0E /* Assets.xcassets */; };
 		5B89B80A1EF1400E00A30A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B89B8061EF1400E00A30A0E /* LaunchScreen.storyboard */; };
 		5B89B8101EF1410900A30A0E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89B80F1EF1410900A30A0E /* RootViewController.swift */; };
@@ -42,6 +48,12 @@
 		3752151BA460C7A0524A299C /* Pods-Project03.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project03.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project03/Pods-Project03.debug.xcconfig"; sourceTree = "<group>"; };
 		40380CC7929BE92D6FB6AA2C /* Pods-Project03.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project03.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project03/Pods-Project03.release.xcconfig"; sourceTree = "<group>"; };
 		5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+MXAdd.swift"; sourceTree = "<group>"; };
+		5B78992921198DB1005B5FD9 /* MsgListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MsgListItem.swift; path = Project03/Classes/Message/Models/MsgListItem.swift; sourceTree = SOURCE_ROOT; };
+		5B78992C21199A23005B5FD9 /* NSData+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSData+MXAdd.swift"; sourceTree = "<group>"; };
+		5B7899322119A156005B5FD9 /* chat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chat.json; sourceTree = "<group>"; };
+		5B7899332119A156005B5FD9 /* moments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = moments.json; sourceTree = "<group>"; };
+		5B7899342119A156005B5FD9 /* contact.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contact.json; sourceTree = "<group>"; };
+		5B7899352119A156005B5FD9 /* message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = message.json; sourceTree = "<group>"; };
 		5B89B7EE1EF13F9B00A30A0E /* Project03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B89B8051EF1400E00A30A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B89B8071EF1400E00A30A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,6 +98,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B78992B21198DC4005B5FD9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B78992921198DB1005B5FD9 /* MsgListItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B7899312119A156005B5FD9 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				5B7899322119A156005B5FD9 /* chat.json */,
+				5B7899332119A156005B5FD9 /* moments.json */,
+				5B7899342119A156005B5FD9 /* contact.json */,
+				5B7899352119A156005B5FD9 /* message.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		5B89B7E51EF13F9B00A30A0E = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +140,7 @@
 			children = (
 				5B89B8031EF1400E00A30A0E /* Classes */,
 				5B89B80E1EF140C400A30A0E /* RootView */,
-				5BE15B7621184D40004454EC /* Common */,
+				5BE15B7621184D40004454EC /* Extension */,
 				5B89B8421EF14A9F00A30A0E /* Define */,
 				5B89B8041EF1400E00A30A0E /* Resource */,
 			);
@@ -132,6 +163,7 @@
 		5B89B8041EF1400E00A30A0E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				5B7899312119A156005B5FD9 /* JSON */,
 				5B89B8471EF22A0C00A30A0E /* Info.plist */,
 				5B89B8051EF1400E00A30A0E /* Assets.xcassets */,
 				5B89B8061EF1400E00A30A0E /* LaunchScreen.storyboard */,
@@ -306,18 +338,11 @@
 		5B89B8501EF22DB400A30A0E /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				5B89B8511EF22DB400A30A0E /* Models */,
+				5B78992B21198DC4005B5FD9 /* Models */,
 				5B89B8551EF22DB400A30A0E /* Views */,
 				5B89B8521EF22DB400A30A0E /* Controllers */,
 			);
 			path = Message;
-			sourceTree = "<group>";
-		};
-		5B89B8511EF22DB400A30A0E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		5B89B8521EF22DB400A30A0E /* Controllers */ = {
@@ -370,14 +395,15 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		5BE15B7621184D40004454EC /* Common */ = {
+		5BE15B7621184D40004454EC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				5BE15B7721184E23004454EC /* UIColor+MXAdd.swift */,
 				5BE15B7921185062004454EC /* UIImage+MXAdd.swift */,
 				5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */,
+				5B78992C21199A23005B5FD9 /* NSData+MXAdd.swift */,
 			);
-			path = Common;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		80F0B84DB750EADAEFB8D720 /* Pods */ = {
@@ -431,6 +457,7 @@
 				TargetAttributes = {
 					5B89B7ED1EF13F9B00A30A0E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = DCBW8CKASN;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -458,14 +485,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7899382119A157005B5FD9 /* contact.json in Resources */,
 				5B89B82C1EF142B000A30A0E /* HomepageViewController.xib in Resources */,
+				5B7899362119A157005B5FD9 /* chat.json in Resources */,
 				5B89B84F1EF22BD500A30A0E /* HomepageCell.xib in Resources */,
 				5B89B86D1EF2592D00A30A0E /* DiscoverListCell.xib in Resources */,
 				5B89B8361EF143E400A30A0E /* DiscoverViewController.xib in Resources */,
 				5B89B8091EF1400E00A30A0E /* Assets.xcassets in Resources */,
 				5B89B8411EF148FD00A30A0E /* ProfileHeadView.xib in Resources */,
 				5B89B8681EF255BA00A30A0E /* MsgSortListCell.xib in Resources */,
+				5B7899392119A157005B5FD9 /* message.json in Resources */,
 				5B89B80A1EF1400E00A30A0E /* LaunchScreen.storyboard in Resources */,
+				5B7899372119A157005B5FD9 /* moments.json in Resources */,
 				5B89B8321EF143D900A30A0E /* ProfileViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,6 +569,7 @@
 				5B89B8441EF14AF700A30A0E /* MXDefine.swift in Sources */,
 				5B89B8351EF143E400A30A0E /* DiscoverViewController.swift in Sources */,
 				5B89B83D1EF147DD00A30A0E /* ProfileHeadView.swift in Sources */,
+				5B78992D21199A23005B5FD9 /* NSData+MXAdd.swift in Sources */,
 				5B89B8721EF279C900A30A0E /* MXAppConfig.swift in Sources */,
 				5B89B8181EF141AC00A30A0E /* MXViewController.swift in Sources */,
 				5B89B8161EF1419D00A30A0E /* MXNavigationController.swift in Sources */,
@@ -548,6 +580,7 @@
 				5B89B85A1EF22DC800A30A0E /* MessageViewController.swift in Sources */,
 				5B89B82B1EF142B000A30A0E /* HomepageViewController.swift in Sources */,
 				5BE15B7521183F0E004454EC /* ContactsViewController.swift in Sources */,
+				5B78992A21198DB1005B5FD9 /* MsgListItem.swift in Sources */,
 				5BE15B7A21185062004454EC /* UIImage+MXAdd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -681,6 +714,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = DCBW8CKASN;
 				INFOPLIST_FILE = "$(SRCROOT)/Project03/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -696,6 +730,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = DCBW8CKASN;
 				INFOPLIST_FILE = "$(SRCROOT)/Project03/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
