@@ -10,6 +10,7 @@
 		534618A27457F8B57D4A98BB /* Pods_Project03.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F7E9F009C4E451D85B486A /* Pods_Project03.framework */; };
 		5B62636A211A966100709734 /* UIImageView+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B626369211A966100709734 /* UIImageView+MXAdd.swift */; };
 		5B62636C211A9FD400709734 /* UIView+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62636B211A9FD400709734 /* UIView+MXAdd.swift */; };
+		5B626371211ADC8900709734 /* UILabel+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B626370211ADC8900709734 /* UILabel+MXAdd.swift */; };
 		5B78991F21193528005B5FD9 /* UINavigationItem+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */; };
 		5B78992A21198DB1005B5FD9 /* MsgListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78992921198DB1005B5FD9 /* MsgListItem.swift */; };
 		5B78992D21199A23005B5FD9 /* NSData+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78992C21199A23005B5FD9 /* NSData+MXAdd.swift */; };
@@ -51,6 +52,7 @@
 		40380CC7929BE92D6FB6AA2C /* Pods-Project03.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project03.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project03/Pods-Project03.release.xcconfig"; sourceTree = "<group>"; };
 		5B626369211A966100709734 /* UIImageView+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+MXAdd.swift"; sourceTree = "<group>"; };
 		5B62636B211A9FD400709734 /* UIView+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+MXAdd.swift"; sourceTree = "<group>"; };
+		5B626370211ADC8900709734 /* UILabel+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+MXAdd.swift"; sourceTree = "<group>"; };
 		5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+MXAdd.swift"; sourceTree = "<group>"; };
 		5B78992921198DB1005B5FD9 /* MsgListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MsgListItem.swift; path = Project03/Classes/Message/Models/MsgListItem.swift; sourceTree = SOURCE_ROOT; };
 		5B78992C21199A23005B5FD9 /* NSData+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSData+MXAdd.swift"; sourceTree = "<group>"; };
@@ -102,6 +104,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B62636D211ADB9900709734 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5BE15B7721184E23004454EC /* UIColor+MXAdd.swift */,
+				5BE15B7921185062004454EC /* UIImage+MXAdd.swift */,
+				5B626369211A966100709734 /* UIImageView+MXAdd.swift */,
+				5B62636B211A9FD400709734 /* UIView+MXAdd.swift */,
+				5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		5B62636E211ADC5F00709734 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5B62636F211ADC7700709734 /* UILabel */,
+				5BE15B7621184D40004454EC /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5B62636F211ADC7700709734 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				5B626370211ADC8900709734 /* UILabel+MXAdd.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 		5B78992B21198DC4005B5FD9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,8 +175,8 @@
 			children = (
 				5B89B8031EF1400E00A30A0E /* Classes */,
 				5B89B80E1EF140C400A30A0E /* RootView */,
-				5BE15B7621184D40004454EC /* Extension */,
 				5B89B8421EF14A9F00A30A0E /* Define */,
+				5B62636E211ADC5F00709734 /* Utils */,
 				5B89B8041EF1400E00A30A0E /* Resource */,
 			);
 			path = Project03;
@@ -402,11 +433,7 @@
 		5BE15B7621184D40004454EC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				5BE15B7721184E23004454EC /* UIColor+MXAdd.swift */,
-				5BE15B7921185062004454EC /* UIImage+MXAdd.swift */,
-				5B626369211A966100709734 /* UIImageView+MXAdd.swift */,
-				5B62636B211A9FD400709734 /* UIView+MXAdd.swift */,
-				5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */,
+				5B62636D211ADB9900709734 /* UIKit */,
 				5B78992C21199A23005B5FD9 /* NSData+MXAdd.swift */,
 			);
 			path = Extension;
@@ -572,6 +599,7 @@
 				5B89B8101EF1410900A30A0E /* RootViewController.swift in Sources */,
 				5B62636A211A966100709734 /* UIImageView+MXAdd.swift in Sources */,
 				5B78991F21193528005B5FD9 /* UINavigationItem+MXAdd.swift in Sources */,
+				5B626371211ADC8900709734 /* UILabel+MXAdd.swift in Sources */,
 				5B89B86C1EF2592D00A30A0E /* DiscoverListCell.swift in Sources */,
 				5B89B8441EF14AF700A30A0E /* MXDefine.swift in Sources */,
 				5B89B8351EF143E400A30A0E /* DiscoverViewController.swift in Sources */,

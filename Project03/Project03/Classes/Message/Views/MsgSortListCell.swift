@@ -23,6 +23,7 @@ class MsgSortListCell: UITableViewCell {
     }
 
     func configMsgItem(msgItem: MsgListItem) {
+        self.unreadCountLabel.layer.backgroundColor = UIColor.mx_colorOfHex(hexString: "F2331C").cgColor
         self.unreadCountLabel.isHidden = msgItem.unreadNumber > 0 ? false : true
         self.unreadCountLabel.text = msgItem.unreadNumber > 99 ? "99" : String(msgItem.unreadNumber)
         self.nicknameLabel.text = msgItem.nickname

@@ -18,10 +18,10 @@ class RootViewController: UITabBarController {
     
     private func setupAppearance() {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.lightGray], for: .normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.colorOfHexString(hexString: "68BB1E")], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.mx_colorOfHex(hexString: "68BB1E")], for: .selected)
         
         UINavigationBar.appearance().tintColor = UIColor.white
-        UINavigationBar.appearance().barTintColor = UIColor.colorOfHexString(hexString: "1A1A1A")
+        UINavigationBar.appearance().barTintColor = UIColor.mx_colorOfHex(hexString: "1A1A1A")
         UINavigationBar.appearance().isTranslucent = true
         
         let attributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17),

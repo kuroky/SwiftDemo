@@ -11,7 +11,7 @@ import Hue
 
 extension UIColor {
     /// 16字符串进制转颜色
-    class func colorOfHexString(hexString: String) -> UIColor {
+    class func mx_colorOfHex(hexString: String) -> UIColor {
         if hexString.hasPrefix("#") {
             return UIColor(hex: hexString)
         }
