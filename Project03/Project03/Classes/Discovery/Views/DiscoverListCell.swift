@@ -9,16 +9,21 @@
 import UIKit
 
 class DiscoverListCell: UITableViewCell {
-
+    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.accessoryType = .disclosureIndicator
+    }
+    
+    func configDiscoverData(item: DiscoverItem) {
+        self.titleLabel.text = item.title
+        self.iconImageView.image = UIImage(named: item.imageName)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
-    
 }
