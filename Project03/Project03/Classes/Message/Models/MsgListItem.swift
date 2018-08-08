@@ -22,7 +22,7 @@ struct MsgListItem: Codable {
     var middleImageURL: String?
     
     /// 未读消息数
-    var unreadNumber: Int?
+    var unreadNumber: Int = 0
     
     /// 昵称
     var nickname: String?
@@ -42,8 +42,8 @@ struct MsgListItem: Codable {
     }
     
     /// 最新一条消息时间
-    var dateString: Int? {
-        return latestMessage?.timestamp
+    var dateString: String? {
+        return "2018-04-09" //latestMessage?.timestamp
     }
     
     /// 最新一条消息文字
@@ -92,7 +92,7 @@ struct MsgItem: Codable {
     var cTime: String?
     
     /// 消息送达时间戳
-    var timestamp: Int?
+    var timestamp: Int = 0
     
     /// 消息类型
     var messageContentType: MessageContentType?
@@ -161,3 +161,5 @@ enum MessageFromType: String, Codable {
     /// 订阅号
     case PublicSubscribe = "4"
 }
+
+

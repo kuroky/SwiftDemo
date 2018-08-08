@@ -45,7 +45,7 @@ extension UIBarButtonItem {
     
     /// 根据img图片初始化UIBarButtonItem
     convenience init(imgName: String, closure: @escaping UIBarButtonItemTargetClosure) {
-        self.init(image: UIImage.originalImage(name: imgName), style: .plain, target: nil, action: nil)
+        self.init(image: UIImage.mx_originalImage(name: imgName), style: .plain, target: nil, action: nil)
         targetClosure = closure
         action = #selector(UIBarButtonItem.closureAction)
     }

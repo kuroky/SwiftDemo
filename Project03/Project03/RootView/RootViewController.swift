@@ -53,11 +53,11 @@ class RootViewController: UITabBarController {
     }
 
     private func normalImage(name: String) -> UIImage {
-        return UIImage.originalImage(name: name)
+        return UIImage.mx_originalImage(name: name)
     }
     
     private func selectImage(name: String) -> UIImage {
-        return UIImage.originalImage(name: name)
+        return UIImage.mx_originalImage(name: name)
     }
     
     override func didReceiveMemoryWarning() {

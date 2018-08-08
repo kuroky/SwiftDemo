@@ -33,15 +33,13 @@ class MessageViewController: MXTableViewController {
     }
     
     func setupTableView() {
-        self.tableView.rowHeight = 65
+        self.rowHeight = 65
         self.cellIdentifier = kMessageSortCellId
         let nib:UINib! = UINib.init(nibName: "MsgSortListCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: kMessageSortCellId)
         
         self.mx_reloadData { (cell, item) in
-            
-
-            print((item as! MsgListItem).nickname ?? "nil")
+            (cell as! MsgSortListCell).configMsgItem(msgItem: (item as! MsgListItem))
         }
     }
     
@@ -58,9 +56,9 @@ class MessageViewController: MXTableViewController {
         self.tableView.reloadData()
     }
     
+    //MARK:- UITableViewDelegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
     }
     
     override func didReceiveMemoryWarning() {

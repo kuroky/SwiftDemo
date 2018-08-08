@@ -34,6 +34,7 @@ class MXTableViewController: MXViewController, UITableViewDataSource, UITableVie
     public var dataList = Array<Any>()
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: self.view.bounds, style: .plain)
+        tableView.separatorInset = UIEdgeInsets.zero
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()

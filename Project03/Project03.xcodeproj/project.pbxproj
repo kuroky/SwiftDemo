@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		534618A27457F8B57D4A98BB /* Pods_Project03.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F7E9F009C4E451D85B486A /* Pods_Project03.framework */; };
+		5B62636A211A966100709734 /* UIImageView+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B626369211A966100709734 /* UIImageView+MXAdd.swift */; };
+		5B62636C211A9FD400709734 /* UIView+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62636B211A9FD400709734 /* UIView+MXAdd.swift */; };
 		5B78991F21193528005B5FD9 /* UINavigationItem+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */; };
 		5B78992A21198DB1005B5FD9 /* MsgListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78992921198DB1005B5FD9 /* MsgListItem.swift */; };
 		5B78992D21199A23005B5FD9 /* NSData+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78992C21199A23005B5FD9 /* NSData+MXAdd.swift */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		3752151BA460C7A0524A299C /* Pods-Project03.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project03.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project03/Pods-Project03.debug.xcconfig"; sourceTree = "<group>"; };
 		40380CC7929BE92D6FB6AA2C /* Pods-Project03.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project03.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project03/Pods-Project03.release.xcconfig"; sourceTree = "<group>"; };
+		5B626369211A966100709734 /* UIImageView+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+MXAdd.swift"; sourceTree = "<group>"; };
+		5B62636B211A9FD400709734 /* UIView+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+MXAdd.swift"; sourceTree = "<group>"; };
 		5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+MXAdd.swift"; sourceTree = "<group>"; };
 		5B78992921198DB1005B5FD9 /* MsgListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MsgListItem.swift; path = Project03/Classes/Message/Models/MsgListItem.swift; sourceTree = SOURCE_ROOT; };
 		5B78992C21199A23005B5FD9 /* NSData+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSData+MXAdd.swift"; sourceTree = "<group>"; };
@@ -400,6 +404,8 @@
 			children = (
 				5BE15B7721184E23004454EC /* UIColor+MXAdd.swift */,
 				5BE15B7921185062004454EC /* UIImage+MXAdd.swift */,
+				5B626369211A966100709734 /* UIImageView+MXAdd.swift */,
+				5B62636B211A9FD400709734 /* UIView+MXAdd.swift */,
 				5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */,
 				5B78992C21199A23005B5FD9 /* NSData+MXAdd.swift */,
 			);
@@ -564,10 +570,12 @@
 				5B89B8671EF255BA00A30A0E /* MsgSortListCell.swift in Sources */,
 				5B89B8311EF143D900A30A0E /* ProfileViewController.swift in Sources */,
 				5B89B8101EF1410900A30A0E /* RootViewController.swift in Sources */,
+				5B62636A211A966100709734 /* UIImageView+MXAdd.swift in Sources */,
 				5B78991F21193528005B5FD9 /* UINavigationItem+MXAdd.swift in Sources */,
 				5B89B86C1EF2592D00A30A0E /* DiscoverListCell.swift in Sources */,
 				5B89B8441EF14AF700A30A0E /* MXDefine.swift in Sources */,
 				5B89B8351EF143E400A30A0E /* DiscoverViewController.swift in Sources */,
+				5B62636C211A9FD400709734 /* UIView+MXAdd.swift in Sources */,
 				5B89B83D1EF147DD00A30A0E /* ProfileHeadView.swift in Sources */,
 				5B78992D21199A23005B5FD9 /* NSData+MXAdd.swift in Sources */,
 				5B89B8721EF279C900A30A0E /* MXAppConfig.swift in Sources */,
