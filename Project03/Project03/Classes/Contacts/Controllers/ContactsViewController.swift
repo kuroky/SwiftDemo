@@ -102,16 +102,21 @@ class ContactsViewController: MXTableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 0 {
             return nil
         }
         
-        let title = self.sortedKeys[section]
-        if title == "★" {
-            return "★ 星标朋友"
-        }
-        return title
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 20))
+        view.backgroundColor = UIColor.mx_colorOfHex(hexString: "EFEFF4")
+        let label = UILabel(frame: CGRect(x: 10, y: 0, width: 100, height: 20))
+        label.textColor = UIColor.mx_colorOfHex(hexString: "1AAD19")
+        label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
+        var title = self.sortedKeys[section]
+        title = title == "★" ? "★ 星标朋友" : title
+        label.text = self.sortedKeys[section]
+        view .addSubview(label)
+        return view
     }
     
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {
