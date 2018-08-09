@@ -13,7 +13,7 @@ SwiftHttp Request 实践
 ### Project03
 
 ```
-
+参考 https://github.com/hilen/TSWeChat 资源 仿微信Demo
 ```
 ### Project04
 
