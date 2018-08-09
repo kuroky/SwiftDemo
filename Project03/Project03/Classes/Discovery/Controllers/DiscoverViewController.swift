@@ -49,10 +49,7 @@ class DiscoverViewController: MXTableViewController {
         self.tableView.register(nib, forCellReuseIdentifier: kDiscoveryCellId)
         
         self.headerHeightClosure = { section in
-            if section == 0 {
-                return 15
-            }
-            return 20
+            return section == 0 ? 15 : 20
         }
         
         self.mx_reloadData { (cell, item) in

@@ -45,10 +45,7 @@ class ProfileViewController: MXTableViewController {
         self.tableView.register(UINib(nibName: "ProfileCell", bundle: nil), forCellReuseIdentifier: kProfileCellId)
                 
         self.headerHeightClosure = { section in
-            if section == 0 {
-                return 15
-            }
-            return 20
+            return section == 0 ? 15 : 20
         }
         
         self.cellHeightClosure = { indexPath in
@@ -65,11 +62,6 @@ class ProfileViewController: MXTableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView .deselectRow(at: indexPath, animated: true)
-        
-        let vc = UIViewController.init()
-        vc.view.backgroundColor = UIColor.white
-        vc.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func didReceiveMemoryWarning() {

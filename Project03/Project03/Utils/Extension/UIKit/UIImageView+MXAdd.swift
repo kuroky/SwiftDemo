@@ -21,13 +21,18 @@ extension UIImageView {
         
         // 判断url
         guard let str = urlString else {
-            self.image = UIImage(named: placeholder!)
+            self.image = placeholder?.isEmpty == true ? nil : UIImage(named: placeholder!)
             return
         }
         
         // 加载原图
         guard let size = fittedSize else {
-            self.kf.setImage(with: URL(string: str), placeholder: UIImage(named: placeholder!))
+            if placeholder?.isEmpty != true {
+                self.kf.setImage(with: URL(string: str), placeholder: UIImage(named: placeholder!))
+            }
+            else {
+                self.kf.setImage(with: URL(string: str))
+            }
             return
         }
         
