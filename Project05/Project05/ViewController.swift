@@ -17,7 +17,7 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         let vc = TestViewController()
-        present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
