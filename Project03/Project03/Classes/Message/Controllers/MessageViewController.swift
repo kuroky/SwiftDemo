@@ -11,6 +11,22 @@ import UIKit
 class MessageViewController: MXTableViewController {
     
     let kMessageSortCellId = "messageSortCellId"
+    lazy var actionView: MsgActionView = {
+        let actionView = MsgActionView.initFromNib()
+        self.view.addSubview(actionView)
+        actionView.snp.makeConstraints { (make) in
+            make.leading.equalTo(self.view.snp.leading)
+            make.trailing.equalTo(self.view.snp.trailing)
+            make.top.equalTo(self.view.snp.top)
+            make.bottom.equalTo(self.view.snp.bottom)
+        }
+        return actionView
+    } ()
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.actionView.isHidden = true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +36,7 @@ class MessageViewController: MXTableViewController {
     }
     
     func setupData() {
-          
+          self.actionView.isHidden = true
     }
     
     func setupUI() {
@@ -28,7 +44,7 @@ class MessageViewController: MXTableViewController {
         self.setupTableView()
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(imgName: "barbuttonicon_add", closure: { _ in
-            
+            self.actionView.isHidden = !self.actionView.isHidden
         })
     }
     

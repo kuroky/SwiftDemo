@@ -58,7 +58,7 @@ class ContactsViewController: MXTableViewController {
         
         guard contacts.data != nil else { return }
         
-        // 星标lianxiren
+        // 星标联系人
         let starContacts = contacts.data?.first
         self.dataList.append(starContacts!)
         self.sortedKeys.append("★")
