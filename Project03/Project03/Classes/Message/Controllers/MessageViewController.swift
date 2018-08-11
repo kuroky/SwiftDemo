@@ -75,6 +75,8 @@ class MessageViewController: MXTableViewController {
     //MARK:- UITableViewDelegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let msgContentVC = MsgContentViewController()
+        self.navigationController?.pushViewController(msgContentVC, animated: true)
     }
     
     override func didReceiveMemoryWarning() {

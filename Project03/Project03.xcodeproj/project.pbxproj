@@ -39,6 +39,7 @@
 		5B96BFE9211C1E8C00FFF30C /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96BFE7211C1E8C00FFF30C /* ContactsCell.swift */; };
 		5B96BFEA211C1E8C00FFF30C /* ContactsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B96BFE8211C1E8C00FFF30C /* ContactsCell.xib */; };
 		5B96BFEC211C207A00FFF30C /* ContactsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96BFEB211C207A00FFF30C /* ContactsItem.swift */; };
+		5BCC01DF211EC47800B8B8D9 /* MsgContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC01DE211EC47800B8B8D9 /* MsgContentViewController.swift */; };
 		5BDD93F8211D659800868AB6 /* MsgActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD93F7211D659800868AB6 /* MsgActionView.swift */; };
 		5BDD93FA211D661B00868AB6 /* MsgActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD93F9211D661B00868AB6 /* MsgActionView.xib */; };
 		5BDD93FD211D6EBA00868AB6 /* MsgActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD93FB211D6EBA00868AB6 /* MsgActionCell.swift */; };
@@ -85,6 +86,7 @@
 		5B96BFE7211C1E8C00FFF30C /* ContactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCell.swift; sourceTree = "<group>"; };
 		5B96BFE8211C1E8C00FFF30C /* ContactsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsCell.xib; sourceTree = "<group>"; };
 		5B96BFEB211C207A00FFF30C /* ContactsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsItem.swift; sourceTree = "<group>"; };
+		5BCC01DE211EC47800B8B8D9 /* MsgContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgContentViewController.swift; sourceTree = "<group>"; };
 		5BDD93F7211D659800868AB6 /* MsgActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgActionView.swift; sourceTree = "<group>"; };
 		5BDD93F9211D661B00868AB6 /* MsgActionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MsgActionView.xib; sourceTree = "<group>"; };
 		5BDD93FB211D6EBA00868AB6 /* MsgActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgActionCell.swift; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				5B89B8581EF22DC800A30A0E /* MessageViewController.swift */,
+				5BCC01DE211EC47800B8B8D9 /* MsgContentViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				5B89B8441EF14AF700A30A0E /* MXDefine.swift in Sources */,
 				5B89B8351EF143E400A30A0E /* DiscoverViewController.swift in Sources */,
 				5B62636C211A9FD400709734 /* UIView+MXAdd.swift in Sources */,
+				5BCC01DF211EC47800B8B8D9 /* MsgContentViewController.swift in Sources */,
 				5B626377211AE9F800709734 /* ProfileItem.swift in Sources */,
 				5B78992D21199A23005B5FD9 /* NSData+MXAdd.swift in Sources */,
 				5B89B8721EF279C900A30A0E /* MXAppConfig.swift in Sources */,
