@@ -16,7 +16,7 @@
 		5B62637B211AED8200709734 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B626379211AED8200709734 /* ProfileCell.xib */; };
 		5B78991F21193528005B5FD9 /* UINavigationItem+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */; };
 		5B78992A21198DB1005B5FD9 /* MsgListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78992921198DB1005B5FD9 /* MsgListItem.swift */; };
-		5B78992D21199A23005B5FD9 /* NSData+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78992C21199A23005B5FD9 /* NSData+MXAdd.swift */; };
+		5B78992D21199A23005B5FD9 /* Data+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78992C21199A23005B5FD9 /* Data+MXAdd.swift */; };
 		5B7899362119A157005B5FD9 /* chat.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B7899322119A156005B5FD9 /* chat.json */; };
 		5B7899372119A157005B5FD9 /* moments.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B7899332119A156005B5FD9 /* moments.json */; };
 		5B7899382119A157005B5FD9 /* contact.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B7899342119A156005B5FD9 /* contact.json */; };
@@ -39,6 +39,8 @@
 		5B96BFE9211C1E8C00FFF30C /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96BFE7211C1E8C00FFF30C /* ContactsCell.swift */; };
 		5B96BFEA211C1E8C00FFF30C /* ContactsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B96BFE8211C1E8C00FFF30C /* ContactsCell.xib */; };
 		5B96BFEC211C207A00FFF30C /* ContactsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96BFEB211C207A00FFF30C /* ContactsItem.swift */; };
+		5BBFBD0921212FCC002B6C7B /* Date+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBFBD0821212FCC002B6C7B /* Date+MXAdd.swift */; };
+		5BBFBD0B212131BF002B6C7B /* Int+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBFBD0A212131BF002B6C7B /* Int+MXAdd.swift */; };
 		5BCC01DF211EC47800B8B8D9 /* MsgContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC01DE211EC47800B8B8D9 /* MsgContentViewController.swift */; };
 		5BDD93F8211D659800868AB6 /* MsgActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD93F7211D659800868AB6 /* MsgActionView.swift */; };
 		5BDD93FA211D661B00868AB6 /* MsgActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD93F9211D661B00868AB6 /* MsgActionView.xib */; };
@@ -61,7 +63,7 @@
 		5B626379211AED8200709734 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+MXAdd.swift"; sourceTree = "<group>"; };
 		5B78992921198DB1005B5FD9 /* MsgListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MsgListItem.swift; path = Project03/Classes/Message/Models/MsgListItem.swift; sourceTree = SOURCE_ROOT; };
-		5B78992C21199A23005B5FD9 /* NSData+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSData+MXAdd.swift"; sourceTree = "<group>"; };
+		5B78992C21199A23005B5FD9 /* Data+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+MXAdd.swift"; sourceTree = "<group>"; };
 		5B7899322119A156005B5FD9 /* chat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chat.json; sourceTree = "<group>"; };
 		5B7899332119A156005B5FD9 /* moments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = moments.json; sourceTree = "<group>"; };
 		5B7899342119A156005B5FD9 /* contact.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contact.json; sourceTree = "<group>"; };
@@ -86,6 +88,8 @@
 		5B96BFE7211C1E8C00FFF30C /* ContactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCell.swift; sourceTree = "<group>"; };
 		5B96BFE8211C1E8C00FFF30C /* ContactsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsCell.xib; sourceTree = "<group>"; };
 		5B96BFEB211C207A00FFF30C /* ContactsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsItem.swift; sourceTree = "<group>"; };
+		5BBFBD0821212FCC002B6C7B /* Date+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+MXAdd.swift"; sourceTree = "<group>"; };
+		5BBFBD0A212131BF002B6C7B /* Int+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+MXAdd.swift"; sourceTree = "<group>"; };
 		5BCC01DE211EC47800B8B8D9 /* MsgContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgContentViewController.swift; sourceTree = "<group>"; };
 		5BDD93F7211D659800868AB6 /* MsgActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgActionView.swift; sourceTree = "<group>"; };
 		5BDD93F9211D661B00868AB6 /* MsgActionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MsgActionView.xib; sourceTree = "<group>"; };
@@ -113,9 +117,9 @@
 		5B62636D211ADB9900709734 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				5BE15B7721184E23004454EC /* UIColor+MXAdd.swift */,
 				5BE15B7921185062004454EC /* UIImage+MXAdd.swift */,
 				5B626369211A966100709734 /* UIImageView+MXAdd.swift */,
+				5BE15B7721184E23004454EC /* UIColor+MXAdd.swift */,
 				5B62636B211A9FD400709734 /* UIView+MXAdd.swift */,
 				5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */,
 			);
@@ -427,7 +431,9 @@
 			isa = PBXGroup;
 			children = (
 				5B62636D211ADB9900709734 /* UIKit */,
-				5B78992C21199A23005B5FD9 /* NSData+MXAdd.swift */,
+				5B78992C21199A23005B5FD9 /* Data+MXAdd.swift */,
+				5BBFBD0821212FCC002B6C7B /* Date+MXAdd.swift */,
+				5BBFBD0A212131BF002B6C7B /* Int+MXAdd.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -598,11 +604,13 @@
 				5B62636C211A9FD400709734 /* UIView+MXAdd.swift in Sources */,
 				5BCC01DF211EC47800B8B8D9 /* MsgContentViewController.swift in Sources */,
 				5B626377211AE9F800709734 /* ProfileItem.swift in Sources */,
-				5B78992D21199A23005B5FD9 /* NSData+MXAdd.swift in Sources */,
+				5B78992D21199A23005B5FD9 /* Data+MXAdd.swift in Sources */,
 				5B89B8721EF279C900A30A0E /* MXAppConfig.swift in Sources */,
 				5B62637A211AED8200709734 /* ProfileCell.swift in Sources */,
 				5B89B8181EF141AC00A30A0E /* MXViewController.swift in Sources */,
 				5B89B8161EF1419D00A30A0E /* MXNavigationController.swift in Sources */,
+				5BBFBD0921212FCC002B6C7B /* Date+MXAdd.swift in Sources */,
+				5BBFBD0B212131BF002B6C7B /* Int+MXAdd.swift in Sources */,
 				5BE15B7C21185526004454EC /* MXTableViewController.swift in Sources */,
 				5B89B84A1EF22A1600A30A0E /* AppDelegate.swift in Sources */,
 				5BE15B7821184E23004454EC /* UIColor+MXAdd.swift in Sources */,

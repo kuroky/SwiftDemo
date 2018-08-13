@@ -39,13 +39,13 @@ extension UIImageView {
         // 缓存key
         let cacheKey = self.cropWithURL(urlString: str, cropSize: size)
         
-        // 取内存
+        // 内存缓存
         if let memoryImage = KingfisherManager.shared.cache.retrieveImageInMemoryCache(forKey: cacheKey) {
             self.image = memoryImage
             return
         }
         
-        // 取磁盘
+        // 磁盘缓存
         if let diskImage = KingfisherManager.shared.cache.retrieveImageInDiskCache(forKey: cacheKey) {
             self.image = diskImage
             return

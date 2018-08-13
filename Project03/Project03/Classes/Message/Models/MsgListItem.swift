@@ -43,9 +43,10 @@ struct MsgListItem: Codable {
     
     /// 最新一条消息时间
     var dateString: String? {
-        return "2018-04-09" //latestMessage?.timestamp
+        return Date.dateFromInterval(interval: (latestMessage?.timestamp)!).stringFromDate()
+        //return "2018-04-09" //latestMessage?.timestamp
     }
-    
+
     /// 最新一条消息文字
     var lastMessage: String? {
         get {

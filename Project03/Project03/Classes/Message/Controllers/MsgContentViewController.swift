@@ -7,9 +7,21 @@
 //
 
 import UIKit
+import SnapKit
 
 class MsgContentViewController: MXViewController {
 
+    var msgItem: MsgListItem?
+    
+    lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: CGRect.zero, style: .plain)
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.backgroundView = UIImageView(image: UIImage(named: "chat_background"))
+        self.view.addSubview(tableView)
+        return tableView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupData()
@@ -21,7 +33,10 @@ class MsgContentViewController: MXViewController {
     }
     
     func setupUI() {
-    
+        self.navigationItem.title = ""
+        self.tableView.snp.makeConstraints { (make) in
+            make.edges.equalTo(self.view)
+        }
     }
 
     override func didReceiveMemoryWarning() {

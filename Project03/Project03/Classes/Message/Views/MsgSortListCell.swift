@@ -30,7 +30,7 @@ class MsgSortListCell: UITableViewCell {
         self.contentLabel.text = msgItem.lastMessage
         self.timeLabel.text = msgItem.dateString
         
-        self.headImgView.mx_setImageWithURL(urlString: msgItem.middleImageURL, fittedSize: CGSize(width: 48, height: 48), placeholder: nil)
+        self.headImgView.mx_setImageWithURL(urlString: msgItem.middleImageURL, fittedSize: CGSize(width: 48, height: 48), placeholder: nil)        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

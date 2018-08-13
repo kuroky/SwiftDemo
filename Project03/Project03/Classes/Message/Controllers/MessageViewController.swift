@@ -76,6 +76,7 @@ class MessageViewController: MXTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let msgContentVC = MsgContentViewController()
+        msgContentVC.msgItem = (self.dataList[indexPath.row] as! MsgListItem)
         self.navigationController?.pushViewController(msgContentVC, animated: true)
     }
     
