@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SnapKit
+//import SnapKit
 import PullToRefreshKit
 
 class MXTableViewController: MXViewController, UITableViewDataSource, UITableViewDelegate {

@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import SnapKit
 
 class ContactsViewController: MXTableViewController {
     
     let cellId  =   "contactsCellId"
     var sortedKeys: [String] = Array()
+    lazy var footView: ContactFootView = {
+        let footView = Bundle.main.loadNibNamed("ContactFootView", owner: self, options: nil)?.first as! ContactFootView
+        footView.frame = CGRect(x: 0, y: 0, width: UIDevice.mx_deviceWidth(), height: 40)
+        return footView
+    } ()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +33,7 @@ class ContactsViewController: MXTableViewController {
     func setupUI() {
         self.navigationItem.title = "通讯录"
         self.setupTableView()
+        self.tableView.tableFooterView = self.footView
     }
     
     func setupTableView() {
@@ -68,6 +75,7 @@ class ContactsViewController: MXTableViewController {
         self.dataList.append(contentsOf: sortResult.sortValues)
         self.sortedKeys.append(contentsOf: sortResult.sortKeys)
         
+        self.footView.configCount(count: otherContacts?.count)
         self.tableView.reloadData()
     }
     

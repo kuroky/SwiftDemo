@@ -14,6 +14,10 @@
 		5B626377211AE9F800709734 /* ProfileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B626376211AE9F800709734 /* ProfileItem.swift */; };
 		5B62637A211AED8200709734 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B626378211AED8200709734 /* ProfileCell.swift */; };
 		5B62637B211AED8200709734 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B626379211AED8200709734 /* ProfileCell.xib */; };
+		5B6275AC21227A9D00FB4267 /* UIDevice+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6275AB21227A9D00FB4267 /* UIDevice+MXAdd.swift */; };
+		5B6275AE2122879900FB4267 /* DispatchQueue+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6275AD2122879900FB4267 /* DispatchQueue+MXAdd.swift */; };
+		5B6275B021228D1A00FB4267 /* ContactFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6275AF21228D1A00FB4267 /* ContactFootView.swift */; };
+		5B6275B221228D2200FB4267 /* ContactFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B6275B121228D2200FB4267 /* ContactFootView.xib */; };
 		5B78991F21193528005B5FD9 /* UINavigationItem+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */; };
 		5B78992A21198DB1005B5FD9 /* MsgListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78992921198DB1005B5FD9 /* MsgListItem.swift */; };
 		5B78992D21199A23005B5FD9 /* Data+MXAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78992C21199A23005B5FD9 /* Data+MXAdd.swift */; };
@@ -61,6 +65,10 @@
 		5B626376211AE9F800709734 /* ProfileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItem.swift; sourceTree = "<group>"; };
 		5B626378211AED8200709734 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		5B626379211AED8200709734 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		5B6275AB21227A9D00FB4267 /* UIDevice+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+MXAdd.swift"; sourceTree = "<group>"; };
+		5B6275AD2122879900FB4267 /* DispatchQueue+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+MXAdd.swift"; sourceTree = "<group>"; };
+		5B6275AF21228D1A00FB4267 /* ContactFootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFootView.swift; sourceTree = "<group>"; };
+		5B6275B121228D2200FB4267 /* ContactFootView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactFootView.xib; sourceTree = "<group>"; };
 		5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+MXAdd.swift"; sourceTree = "<group>"; };
 		5B78992921198DB1005B5FD9 /* MsgListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MsgListItem.swift; path = Project03/Classes/Message/Models/MsgListItem.swift; sourceTree = SOURCE_ROOT; };
 		5B78992C21199A23005B5FD9 /* Data+MXAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+MXAdd.swift"; sourceTree = "<group>"; };
@@ -122,6 +130,8 @@
 				5BE15B7721184E23004454EC /* UIColor+MXAdd.swift */,
 				5B62636B211A9FD400709734 /* UIView+MXAdd.swift */,
 				5B78991E21193528005B5FD9 /* UINavigationItem+MXAdd.swift */,
+				5B6275AB21227A9D00FB4267 /* UIDevice+MXAdd.swift */,
+				5B6275AD2122879900FB4267 /* DispatchQueue+MXAdd.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -397,6 +407,8 @@
 			children = (
 				5B96BFE7211C1E8C00FFF30C /* ContactsCell.swift */,
 				5B96BFE8211C1E8C00FFF30C /* ContactsCell.xib */,
+				5B6275AF21228D1A00FB4267 /* ContactFootView.swift */,
+				5B6275B121228D2200FB4267 /* ContactFootView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -522,6 +534,7 @@
 				5B7899362119A157005B5FD9 /* chat.json in Resources */,
 				5B89B86D1EF2592D00A30A0E /* DiscoverListCell.xib in Resources */,
 				5B89B8091EF1400E00A30A0E /* Assets.xcassets in Resources */,
+				5B6275B221228D2200FB4267 /* ContactFootView.xib in Resources */,
 				5B89B8681EF255BA00A30A0E /* MsgSortListCell.xib in Resources */,
 				5B7899392119A157005B5FD9 /* message.json in Resources */,
 				5BDD93FE211D6EBA00868AB6 /* MsgActionCell.xib in Resources */,
@@ -594,9 +607,11 @@
 			files = (
 				5B89B8671EF255BA00A30A0E /* MsgSortListCell.swift in Sources */,
 				5B89B8311EF143D900A30A0E /* ProfileViewController.swift in Sources */,
+				5B6275AE2122879900FB4267 /* DispatchQueue+MXAdd.swift in Sources */,
 				5B96BFE9211C1E8C00FFF30C /* ContactsCell.swift in Sources */,
 				5B89B8101EF1410900A30A0E /* RootViewController.swift in Sources */,
 				5B62636A211A966100709734 /* UIImageView+MXAdd.swift in Sources */,
+				5B6275B021228D1A00FB4267 /* ContactFootView.swift in Sources */,
 				5B78991F21193528005B5FD9 /* UINavigationItem+MXAdd.swift in Sources */,
 				5B89B86C1EF2592D00A30A0E /* DiscoverListCell.swift in Sources */,
 				5B89B8441EF14AF700A30A0E /* MXDefine.swift in Sources */,
@@ -615,6 +630,7 @@
 				5B89B84A1EF22A1600A30A0E /* AppDelegate.swift in Sources */,
 				5BE15B7821184E23004454EC /* UIColor+MXAdd.swift in Sources */,
 				5B89B85A1EF22DC800A30A0E /* MessageViewController.swift in Sources */,
+				5B6275AC21227A9D00FB4267 /* UIDevice+MXAdd.swift in Sources */,
 				5B626374211AE0A600709734 /* DiscoverItem.swift in Sources */,
 				5B96BFEC211C207A00FFF30C /* ContactsItem.swift in Sources */,
 				5BDD93F8211D659800868AB6 /* MsgActionView.swift in Sources */,

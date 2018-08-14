@@ -8,10 +8,14 @@
 
 import Foundation
 
+/// 日期格式单例
 class DateFormatterPool {
     static let shared = DateFormatterPool()
     private init() {}
     
+    /// 生成指定的日期格式
+    /// - Parameters:
+    ///   - formate: date style
     class func dateFormatter(formate: String) -> DateFormatter {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = formate
@@ -66,26 +70,4 @@ extension Date {
         let count = nowComps.day! - selfCmps.day!
         return (selfCmps.year == nowComps.year) && (selfCmps.month == nowComps.month) && (count == 1)
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
