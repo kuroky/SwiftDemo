@@ -12,7 +12,7 @@ import UIKit
 extension UIDevice {
         
     /// 当前设备宽度
-    class func mx_deviceWidth() -> CGFloat {
+    static var mx_deviceWidth: CGFloat {
         var width: CGFloat = 0
         DispatchQueue.once {
             width = UIScreen.main.bounds.size.width
@@ -21,12 +21,11 @@ extension UIDevice {
     }
     
     /// 当前设备高度
-    class func mx_deviceHeight() -> CGFloat {
+    static var mx_deviceHeight: CGFloat {
         var height: CGFloat = 0
         DispatchQueue.once {
             height = UIScreen.main.bounds.size.height
         }
         return height
     }
-    
 }

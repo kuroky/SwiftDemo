@@ -70,7 +70,7 @@ extension UIImageView {
     }
     
     // 指定缓存的url key
-    func cropWithURL(urlString: String, cropSize: CGSize) -> String {
+    private func cropWithURL(urlString: String, cropSize: CGSize) -> String {
         let url = URL(string: urlString)
         let sizeStr = "_" + String(format: "%.0f", cropSize.width) + "_" + String(format: "%.0f", cropSize.height);
         let pathStr = (url?.deletingPathExtension().absoluteString)! + sizeStr

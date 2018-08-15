@@ -15,7 +15,7 @@ class ContactsViewController: MXTableViewController {
     var sortedKeys: [String] = Array()
     lazy var footView: ContactFootView = {
         let footView = Bundle.main.loadNibNamed("ContactFootView", owner: self, options: nil)?.first as! ContactFootView
-        footView.frame = CGRect(x: 0, y: 0, width: UIDevice.mx_deviceWidth(), height: 40)
+        footView.frame = CGRect(x: 0, y: 0, width: UIDevice.mx_deviceWidth, height: 40)
         return footView
     } ()
     
